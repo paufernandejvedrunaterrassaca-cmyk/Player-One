@@ -30,6 +30,7 @@
             android:layout_height="@dimen/logo_large"
             android:contentDescription="@string/cd_logo"
             android:src="@drawable/ic_logo"
+            app:tint="@color/design_default_color_primary_dark"
             app:layout_constraintBottom_toTopOf="@id/tv_title"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
