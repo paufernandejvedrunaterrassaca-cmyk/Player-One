@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="122"
+    android:viewportHeight="120">
+    <!-- Circumferència gairebé sencera, oberta a dalt per l'estrella -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M70.56,19A46,46 0,1 1,51.44 19"
+        android:strokeWidth="1.6"
+        android:strokeAlpha="0.85"
+        android:strokeColor="@color/ice_white" />
+    <!-- Destells laterals -->
+    <path
+        android:fillColor="@color/ice_white"
+        android:pathData="M9,64L15,63.2L21,64L15,64.8ZM101,64L107,63.2L113,64L107,64.8Z" />
+    <!-- Lletres P1 amb serifa -->
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M28,44H52A13,13 0,0 1,52 70H42V85H49V88H27V85H34V47H28ZM42,48.5H51A8.5,8.5 0,0 1,51 65.5H42ZM73,51L88,42V85H95V88H73V85H80V53L74.5,55Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endColor="#FFBFD8FF"
+                android:endY="88"
+                android:startColor="@color/ice_white"
+                android:startY="42"
+                android:type="linear"
+                android:endX="61"
+                android:startX="61" />
+        </aapt:attr>
+    </path>
+    <!-- Estrella guia -->
+    <path
+        android:fillColor="@color/status_in_progress"
+        android:pathData="M61,3L63.6,15.4L69,18L63.6,20.6L61,35L58.4,20.6L53,18L58.4,15.4Z" />
+    <path
+        android:fillColor="@color/ice_white"
+        android:fillAlpha="0.8"
+        android:pathData="M61,9L62.2,16.6L65,18L62.2,19.4L61,28L59.8,19.4L57,18L59.8,16.6Z" />
+</vector>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tipografia -->
+    <style name="TextAppearance.Player1.Display" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:fontFamily">serif</item>
+        <item name="fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/ice_white</item>
+    </style>
+
+    <style name="TextAppearance.Player1.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:fontFamily">serif</item>
+        <item name="fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/ice_white</item>
+    </style>
+
+    <style name="TextAppearance.Player1.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/ice_white</item>
+    </style>
+
+    <style name="TextAppearance.Player1.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ice_white</item>
+    </style>
+
+    <style name="TextAppearance.Player1.BodySecondary" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey_blue</item>
+    </style>
+
+    <style name="TextAppearance.Player1.SectionLabel" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textColor">@color/grey_blue</item>
+    </style>
+
+    <!-- Botons -->
+    <style name="Widget.Player1.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/gold</item>
+        <item name="android:textColor">@color/night_blue</item>
+        <item name="iconTint">@color/night_blue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/corner_button</item>
+    </style>
+
+    <style name="Widget.Player1.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/ice_white</item>
+        <item name="strokeColor">@color/gold</item>
+        <item name="iconTint">@color/ice_white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/corner_button</item>
+    </style>
+
+    <!-- Botó de la pantalla de navegació temporal -->
+    <style name="Widget.Player1.Button.Tile" parent="Widget.Material3.Button.TonalButton">
+        <item name="backgroundTint">@color/slate_blue</item>
+        <item name="android:textColor">@color/ice_white</item>
+        <item name="iconTint">@color/electric_blue</item>
+        <item name="iconPadding">@dimen/spacing_s</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/corner_button</item>
+        <item name="strokeColor">@color/slate_blue_stroke</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- Botó de text discret -->
+    <style name="Widget.Player1.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/grey_blue</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!-- Títol sobre il·lustració, amb ombra per garantir la llegibilitat -->
+    <style name="TextAppearance.Player1.Hero" parent="TextAppearance.Player1.Display">
+        <item name="android:textSize">46sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:shadowColor">@color/night_blue</item>
+        <item name="android:shadowRadius">12</item>
+    </style>
+</resources>

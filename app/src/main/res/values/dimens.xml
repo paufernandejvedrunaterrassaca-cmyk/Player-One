@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_s">8dp</dimen>
+    <dimen name="spacing_m">16dp</dimen>
+    <dimen name="spacing_l">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="corner_button">14dp</dimen>
+    <dimen name="corner_card">16dp</dimen>
+    <dimen name="logo_small">56dp</dimen>
+    <dimen name="logo_large">96dp</dimen>
+    <dimen name="dot_size">8dp</dimen>
+    <dimen name="ornament_width">180dp</dimen>
+</resources>

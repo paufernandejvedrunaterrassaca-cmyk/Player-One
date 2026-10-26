@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="Typos">Player1</string>
+    <string name="brand_name" tools:ignore="Typos">PLAYER1</string>
+    <string name="cd_logo" tools:ignore="Typos">Logotip de Player1</string>
+    <string name="action_create_account">Crear compte</string>
+    <string name="action_login">Iniciar sessió</string>
+    <string name="welcome_tagline">Converteix la teva vida en la teva millor aventura</string>
+    <string name="welcome_description">Compleix missions reals, aconsegueix assoliments i competeix amb altres jugadors</string>
+    <string name="welcome_guest">Accedir com a convidat</string>
+    <string name="welcome_page_indicator">Pàgina 1 de 4</string>
+    <string name="hub_subtitle">Prototip d\'interfície · tria una pantalla</string>
+    <string name="hub_section_access">Accés</string>
+    <string name="hub_section_missions">Missions</string>
+    <string name="hub_section_create">Crear</string>
+    <string name="hub_section_profile">Perfil</string>
+    <string name="hub_welcome">Benvinguda</string>
+    <string name="hub_login">Inici de sessió</string>
+    <string name="hub_register">Registre</string>
+    <string name="hub_mission_list">Llista de missions</string>
+    <string name="hub_mission_detail">Detall de missió</string>
+    <string name="hub_tutorial">Tutorial inicial</string>
+    <string name="hub_my_missions">Les meves missions</string>
+    <string name="hub_edit_mission">Editar missió</string>
+    <string name="hub_profile">Perfil</string>
+    <string name="hub_settings">Preferències</string>
+    <string name="hub_help">Ajuda</string>
+</resources>

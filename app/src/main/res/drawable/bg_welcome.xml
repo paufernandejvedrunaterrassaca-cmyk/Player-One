@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fons provisional: se substituirà per la il·lustració definitiva -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="270"
+        android:centerColor="#FF1B3A63"
+        android:endColor="@color/night_blue"
+        android:startColor="#FF3D6FA8" />
+</shape>

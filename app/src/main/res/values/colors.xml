@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="night_blue">#FF071629</color>
+    <color name="slate_blue">#FF102943</color>
+    <color name="electric_blue">#FF247BFA</color>
+    <color name="gold">#FFF4B942</color>
+    <color name="ice_white">#FFF4F7FC</color>
+    <color name="grey_blue">#FFA7B8CC</color>
+    <color name="status_completed">#FF39C889</color>
+    <color name="status_pending">#FFF4B942</color>
+    <color name="status_in_progress">#FF55B9FF</color>
+    <color name="slate_blue_stroke">#FF1E3A5C</color>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/night_blue" />
+    <!-- La il·lustració es redueix perquè la màscara de la icona no talli l'emblema -->
+    <item
+        android:bottom="11dp"
+        android:drawable="@drawable/ic_launcher_art"
+        android:left="11dp"
+        android:right="11dp"
+        android:top="11dp" />
+</layer-list>
