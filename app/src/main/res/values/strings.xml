@@ -24,4 +24,11 @@
     <string name="hub_profile">Perfil</string>
     <string name="hub_settings">Preferències</string>
     <string name="hub_help">Ajuda</string>
+    <string name="login_back_description">Volver</string>
+    <string name="login_title">¡Bienvenido de nuevo!</string>
+    <string name="login_subtitle">Inicia sesión en tu cuenta</string>
+    <string name="login_email_label">Correo electrónico</string>
+    <string name="login_email_hint">Introduce tu correo electrónico</string>
+    <string name="login_password_label">Contraseña</string>
+    <string name="login_password_hint">Introduce tu contraseña</string>
 </resources>
