@@ -82,7 +82,7 @@
         <item name="android:minHeight">48dp</item>
     </style>
 
-    <!-- Títol sobre il·lustració, amb ombra per garantir la llegibilitat -->
+    <!-- Títol sobre il·lustració -->
     <style name="TextAppearance.Player1.Hero" parent="TextAppearance.Player1.Display">
         <item name="android:textSize">46sp</item>
         <item name="android:letterSpacing">0.04</item>

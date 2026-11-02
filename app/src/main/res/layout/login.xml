@@ -21,7 +21,7 @@
     <ImageView
         android:layout_width="32dp"
         android:layout_height="32dp"
-        android:layout_gravity="top"
+        android:layout_gravity="top|start"
         android:layout_marginStart="28dp"
         android:layout_marginTop="34dp"
         android:src="@drawable/arrow_back"
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/login_title"
-            android:textColor="#F4F7FC"
+            android:textColor="@color/ice_white"
             android:textSize="40sp"
             android:textStyle="bold" />
 
@@ -74,7 +74,26 @@
             app:cardCornerRadius="14dp"
             app:cardElevation="0dp"
             app:strokeColor="@color/slate_blue_stroke"
-            app:strokeWidth="1dp" />
+            app:strokeWidth="1dp">
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/ice_white"
+                android:textColorHint="@color/grey_blue"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:autofillHints="emailAddress"
+                android:importantForAutofill="yes"
+                android:hint="@string/login_email_hint"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -84,7 +103,26 @@
             app:cardCornerRadius="14dp"
             app:cardElevation="0dp"
             app:strokeColor="@color/slate_blue_stroke"
-            app:strokeWidth="1dp" />
+            app:strokeWidth="1dp">
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:inputType="textPassword"
+                android:textColor="@color/ice_white"
+                android:textColorHint="@color/grey_blue"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:autofillHints="password"
+                android:importantForAutofill="yes"
+                android:hint="@string/login_password_hint"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 
@@ -100,7 +138,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
-            android:layout_height="36dp"
+            android:layout_height="48dp"
             android:backgroundTint="@android:color/transparent"
             android:text="@string/login_forgot_password"
             android:textColor="@color/electric_blue"
@@ -157,80 +195,67 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="60dp"
             android:layout_marginTop="8dp"
             android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="8dp"
-                android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="@color/night_blue"
+                android:text=""
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="12dp"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp"
+                app:icon="@drawable/google_logo"
+                app:iconTint="@null"
+                app:iconSize="30dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                android:contentDescription="@string/login_google"/>
 
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    android:backgroundTint="@color/night_blue"
-                    android:text=""
-                    android:insetTop="0dp"
-                    android:insetBottom="0dp"
-                    app:cornerRadius="12dp"
-                    app:strokeColor="@color/slate_blue_stroke"
-                    app:strokeWidth="1dp"
-                    app:icon="@drawable/google_logo"
-                    app:iconTint="@null"
-                    app:iconSize="30dp"
-                    app:iconGravity="textStart"
-                    app:iconPadding="0dp" />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="@color/night_blue"
+                android:text=""
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="12dp"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp"
+                app:icon="@drawable/apple_logo"
+                app:iconTint="@color/ice_white"
+                app:iconSize="30dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                android:contentDescription="@string/login_apple"/>
 
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginEnd="4dp"
-                    android:backgroundTint="@color/night_blue"
-                    android:text=""
-                    android:insetTop="0dp"
-                    android:insetBottom="0dp"
-                    app:cornerRadius="12dp"
-                    app:strokeColor="@color/slate_blue_stroke"
-                    app:strokeWidth="1dp"
-                    app:iconTint="@null"
-                    app:iconSize="30dp"
-                    app:iconGravity="textStart"
-                    app:iconPadding="0dp"
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/apple_logo"
-                        android:scaleType="fitCenter"
-                        android:tint="@color/ice_white"
-                        android:contentDescription="@null" />
-                </com.google.android.material.button.MaterialButton>
-
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_marginStart="8dp"
-                    android:backgroundTint="@color/night_blue"
-                    android:text=""
-                    android:insetTop="0dp"
-                    android:insetBottom="0dp"
-                    app:cornerRadius="12dp"
-                    app:strokeColor="@color/slate_blue_stroke"
-                    app:strokeWidth="1dp"
-                    app:icon="@drawable/facebook_logo"
-                    app:iconTint="@null"
-                    app:iconSize="30dp"
-                    app:iconGravity="textStart"
-                    app:iconPadding="0dp" />
-
-            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/night_blue"
+                android:text=""
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="12dp"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp"
+                app:icon="@drawable/facebook_logo"
+                app:iconTint="@null"
+                app:iconSize="30dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                android:contentDescription="@string/login_facebook"/>
 
         </LinearLayout>
 
@@ -245,12 +270,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/login_no_account"
-                android:textColor="#F4F7FC"
+                android:textColor="@color/ice_white"
                 android:textSize="14sp" />
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:backgroundTint="@android:color/transparent"
                 android:text="@string/login_create_account"
                 android:textColor="@color/electric_blue"
