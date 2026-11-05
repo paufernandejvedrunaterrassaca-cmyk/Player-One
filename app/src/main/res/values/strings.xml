@@ -56,4 +56,20 @@
     <string name="register_have_account">Ja tens un compte?</string>
     <string name="register_login">Iniciar sessió</string>
 
+
+
+    <string name="missions_level">4</string>
+    <string name="missions_title">Missions</string>
+
+    <string name="missions_tab_all">Totes</string>
+    <string name="missions_tab_daily">Diàries</string>
+    <string name="missions_tab_weekly">Setmanals</string>
+    <string name="missions_tab_monthly">Mensuals</string>
+
+    <string name="missions_level_description">Nivell actual del jugador: 4</string>
+    <string name="missions_clock_description">Temps restant de les missions</string>
+    <string name="missions_shield_description">Recompenses i classificació de missions</string>
+
+
+
 </resources>
