@@ -96,7 +96,7 @@
                     android:layout_height="25dp"
                     android:layout_gravity="center"
                     android:contentDescription="@string/register_camera_description"
-                    android:src="@drawable/ic_camera"
+                    android:src="@drawable/ic_add_photo"
                     app:tint="@color/ice_white" />
 
             </com.google.android.material.card.MaterialCardView>
@@ -171,7 +171,7 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/ic_email"
+                        android:src="@drawable/ic_mail"
                         app:tint="@color/ice_white"
                         android:contentDescription="@null" />
 
@@ -213,10 +213,10 @@
 
                     <ImageView
                         android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/ic_s"
-                        app:tint="@color/ice_white"
-                        android:contentDescription="@null" />
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_padlock"
+                        app:tint="@color/ice_white" />
 
                     <EditText
                         android:id="@+id/edit_register_password"
@@ -236,7 +236,7 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/ic_visibility_off_register"
+                        android:src="@drawable/ic_visibility"
                         app:tint="@color/ice_white"
                         android:contentDescription="@null" />
 
@@ -264,7 +264,7 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/ic_lock_register"
+                        android:src="@drawable/ic_padlock"
                         app:tint="@color/ice_white"
                         android:contentDescription="@null" />
 
@@ -286,7 +286,7 @@
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/ic_visibility_off_register"
+                        android:src="@drawable/ic_visibility"
                         app:tint="@color/ice_white"
                         android:contentDescription="@null" />
 
