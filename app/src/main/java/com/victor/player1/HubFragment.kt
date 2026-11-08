@@ -73,5 +73,9 @@ class HubFragment : BindingFragment<FragmentHubBinding>(FragmentHubBinding::infl
         binding.btnGroupDetail.setOnClickListener {
             navigateTo(GroupDetailFragment())
         }
+
+        binding.btnProfile.setOnClickListener {
+            navigateTo(ProfileFragment())
+        }
     }
 }
