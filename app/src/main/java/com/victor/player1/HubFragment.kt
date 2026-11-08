@@ -65,5 +65,13 @@ class HubFragment : BindingFragment<FragmentHubBinding>(FragmentHubBinding::infl
         binding.btnGroups.setOnClickListener {
             navigateTo(GroupsFragment())
         }
+
+        binding.btnGroupChat.setOnClickListener {
+            navigateTo(GroupChatFragment())
+        }
+
+        binding.btnGroupDetail.setOnClickListener {
+            navigateTo(GroupDetailFragment())
+        }
     }
 }

@@ -426,6 +426,31 @@
     <string name="perfil_tancar_sessio">Tancar sessió</string>
     <string name="perfil_tancar_sessio_desc">Tanca la sessió al teu compte</string>
 
+    <string name="group_detail_titulo">Roblox Developers</string>
+    <string name="group_detail_categoria">Desarrollo y programación</string>
+    <string name="group_detail_miembros">12 miembros</string>
+    <string name="group_detail_descripcion">Grupo para compartir proyectos, aprender programación y colaborar en el desarrollo de videojuegos.</string>
+
+    <string name="group_detail_miembros_titulo">MIEMBROS DEL GRUPO</string>
+    <string name="group_detail_miembro_1">Víctor García</string>
+    <string name="group_detail_miembro_2">Pau</string>
+    <string name="group_detail_miembro_3">Guillem</string>
+    <string name="group_detail_miembro_4">Alex</string>
+    <string name="group_detail_miembros_mas">Y 8 miembros más</string>
+
+    <string name="group_detail_misiones_titulo">MISIONES DEL GRUPO</string>
+    <string name="group_detail_mision_1">Diseñar una interfaz</string>
+    <string name="group_detail_mision_1_desc">Crear el diseño de una nueva pantalla para el proyecto.</string>
+    <string name="group_detail_mision_1_progreso">3 / 12 participantes</string>
+
+    <string name="group_detail_mision_2">Compartir avances</string>
+    <string name="group_detail_mision_2_desc">Publicar una actualización del progreso del proyecto.</string>
+    <string name="group_detail_mision_2_progreso">8 / 12 participantes</string>
+
+    <string name="group_detail_mision_3">Completar el prototipo</string>
+    <string name="group_detail_mision_3_desc">Terminar y revisar el prototipo del videojuego.</string>
+    <string name="group_detail_mision_3_progreso">2 / 12 participantes</string>
+
 
 
 
