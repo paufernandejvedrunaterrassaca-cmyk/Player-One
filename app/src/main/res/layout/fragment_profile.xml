@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -109,7 +108,7 @@
                 android:layout_height="32dp"
                 android:contentDescription="@string/perfil_icona_informacio"
                 android:src="@drawable/ic_person"
-                app:tint="#FFF4B942" />
+                app:tint="@color/gold" />
 
             <TextView
                 android:layout_width="0dp"
@@ -145,8 +144,8 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:contentDescription="@string/perfil_icona_seguretat"
-                android:src="@drawable/ic_padlock"
-                app:tint="@color/gold" />
+                app:tint="@color/gold"
+                android:src="@drawable/ic_padlock" />
 
             <TextView
                 android:layout_width="0dp"
@@ -182,8 +181,8 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:contentDescription="@string/perfil_icona_correu"
-                android:src="@drawable/ic_email"
-                app:tint="#FFF4B942" />
+                android:src="@drawable/ic_mail"
+                app:tint="@color/gold"/>
 
             <TextView
                 android:layout_width="0dp"
@@ -220,7 +219,7 @@
                 android:layout_height="32dp"
                 android:contentDescription="@string/perfil_icona_preferencies"
                 android:src="@drawable/ic_settings"
-                app:tint="#FF247BFA" />
+                app:tint="@color/electric_blue" />
 
             <TextView
                 android:layout_width="0dp"
@@ -256,7 +255,7 @@
                 android:layout_height="32dp"
                 android:contentDescription="@string/perfil_icona_ajuda"
                 android:src="@drawable/ic_help"
-                app:tint="#FF247BFA" />
+                app:tint="@color/electric_blue" />
 
             <TextView
                 android:layout_width="0dp"
