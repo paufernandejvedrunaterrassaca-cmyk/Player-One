@@ -160,8 +160,10 @@
                         android:baselineAligned="false">
 
                         <TextView
-                            android:layout_width="44dp"
-                            android:layout_height="44dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="48dp"
+                            android:minHeight="48dp"
                             android:gravity="center"
                             android:text="@string/missio_entrenament_emoji"
                             android:textSize="27sp"
@@ -217,8 +219,8 @@
                             android:layout_weight="1"
                             android:max="100"
                             android:progress="33"
-                            app:progressTint="@color/electric_blue"
-                            app:progressBackgroundTint="@color/slate_blue_stroke"
+                            android:progressTint="@color/electric_blue"
+                            android:progressBackgroundTint="@color/slate_blue_stroke"
                             android:contentDescription="@string/missio_entrenament_descripcio_progres" />
 
                         <TextView
@@ -283,11 +285,13 @@
                         android:baselineAligned="false">
 
                         <TextView
-                            android:layout_width="44dp"
-                            android:layout_height="44dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="48dp"
+                            android:minHeight="48dp"
                             android:gravity="center"
+                            android:textSize="28sp"
                             android:text="@string/missio_lectura_emoji"
-                            android:textSize="27sp"
                             android:importantForAccessibility="no" />
 
                         <LinearLayout
@@ -340,8 +344,8 @@
                             android:layout_weight="1"
                             android:max="100"
                             android:progress="60"
-                            app:progressTint="@color/electric_blue"
-                            app:progressBackgroundTint="@color/slate_blue_stroke"
+                            android:progressTint="@color/electric_blue"
+                            android:progressBackgroundTint="@color/slate_blue_stroke"
                             android:contentDescription="@string/missio_lectura_descripcio_progres" />
 
                         <TextView
@@ -405,11 +409,13 @@
                         android:baselineAligned="false">
 
                         <TextView
-                            android:layout_width="44dp"
-                            android:layout_height="44dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minWidth="48dp"
+                            android:minHeight="48dp"
+                            android:textSize="28sp"
                             android:gravity="center"
                             android:text="@string/missio_habitacio_emoji"
-                            android:textSize="27sp"
                             android:importantForAccessibility="no" />
 
                         <LinearLayout
@@ -462,8 +468,8 @@
                             android:layout_weight="1"
                             android:max="100"
                             android:progress="0"
-                            app:appTint="@color/electric_blue"
-                            app:progressBackgroundTint="@color/slate_blue_stroke"
+                            android:progressTint="@color/electric_blue"
+                            android:progressBackgroundTint="@color/slate_blue_stroke"
                             android:contentDescription="@string/missio_habitacio_descripcio_progres" />
 
                         <TextView
