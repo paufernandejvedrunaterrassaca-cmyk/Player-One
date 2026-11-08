@@ -374,6 +374,24 @@
     <string name="groups_ver_detalles">Ver detalles</string>
     <string name="groups_abrir_chat">Chat</string>
 
+    <string name="group_chat_titulo">Roblox Developers</string>
+    <string name="group_chat_miembros">12 miembros</string>
+
+    <string name="group_chat_mensaje_1">¡Buenas! ¿Cómo lleváis el proyecto?</string>
+    <string name="group_chat_mensaje_2">Estoy terminando el diseño de la interfaz.</string>
+    <string name="group_chat_mensaje_3">Yo ya he terminado la parte de programación.</string>
+    <string name="group_chat_mensaje_4">Perfecto, luego compartimos los avances.</string>
+    <string name="group_chat_mensaje_5">¿Alguien puede ayudarme con un script?</string>
+
+    <string name="group_chat_hora_1">10:30</string>
+    <string name="group_chat_hora_2">10:32</string>
+    <string name="group_chat_hora_3">10:35</string>
+    <string name="group_chat_hora_4">10:37</string>
+    <string name="group_chat_hora_5">10:40</string>
+
+    <string name="group_chat_hint">Escribe un mensaje...</string>
+    <string name="group_chat_enviar">Enviar</string>
+
 
 
 
