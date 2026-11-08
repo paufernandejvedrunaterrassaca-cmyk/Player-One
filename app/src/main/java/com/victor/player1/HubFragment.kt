@@ -58,5 +58,8 @@ class HubFragment : BindingFragment<FragmentHubBinding>(FragmentHubBinding::infl
             navigateTo(PreferencesFragment())
         }
 
+        binding.btnHelp.setOnClickListener {
+            navigateTo(HelpFragment())
+        }
     }
 }

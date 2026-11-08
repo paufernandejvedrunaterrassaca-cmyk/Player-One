@@ -352,6 +352,13 @@
 
     <string name="preferencies_fletxa">›</string>
 
+    <string name="ajuda_descripcio_icona">Icona d’ajuda</string>
+    <string name="ajuda_titol">Necessites ajuda?</string>
+    <string name="ajuda_descripcio">Si vols obtenir més informació sobre Player1, consultar les seves funcions o resoldre qualsevol dubte, visita la nostra pàgina web.</string>
+    <string name="ajuda_web">Visita la nostra pàgina web</string>
+    <string name="ajuda_descripcio_web">Informació sobre la pàgina web de Player1</string>
+
+
 
 
 </resources>
