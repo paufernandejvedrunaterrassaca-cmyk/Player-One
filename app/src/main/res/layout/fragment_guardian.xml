@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/night_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardian_titulo"
+            android:textAppearance="@style/TextAppearance.Player1.Display"
+            android:textColor="@color/ice_white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/guardian_subtitulo"
+            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+            android:textColor="@color/grey_blue" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            app:cardBackgroundColor="@color/slate_blue"
+            app:cardCornerRadius="@dimen/corner_card"
+            app:strokeColor="@color/slate_blue_stroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_m">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guardian_nivel"
+                    android:textAppearance="@style/TextAppearance.Player1.Title"
+                    android:textColor="@color/ice_white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:text="@string/guardian_xp"
+                    android:textAppearance="@style/TextAppearance.Player1.Body"
+                    android:textColor="@color/grey_blue" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:max="1000"
+                    android:progress="740"
+                    android:progressTint="@color/gold"
+                    android:progressBackgroundTint="@color/slate_blue_stroke" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:text="@string/guardian_recompensa_titulo"
+                    android:textAppearance="@style/TextAppearance.Player1.SectionLabel"
+                    android:textColor="@color/gold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs"
+                    android:text="@string/guardian_recompensa"
+                    android:textAppearance="@style/TextAppearance.Player1.Body"
+                    android:textColor="@color/ice_white" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:layout_marginBottom="@dimen/spacing_s"
+            android:text="@string/guardian_logros_titulo"
+            android:textAppearance="@style/TextAppearance.Player1.SectionLabel"
+            android:textColor="@color/gold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌱"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/guardian_logro_1"
+                        android:textAppearance="@style/TextAppearance.Player1.Title"
+                        android:textColor="@color/ice_white" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="@dimen/spacing_xs">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guardian_logro_1_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+                            android:textColor="@color/grey_blue" />
+
+                    </androidx.core.widget.NestedScrollView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guardian_logro_1_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body"
+                        android:textColor="@color/status_completed" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="100"
+                        android:progress="100"
+                        android:progressTint="@color/status_completed"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🌙"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/guardian_logro_2"
+                        android:textAppearance="@style/TextAppearance.Player1.Title"
+                        android:textColor="@color/ice_white" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="@dimen/spacing_xs">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guardian_logro_2_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+                            android:textColor="@color/grey_blue" />
+
+                    </androidx.core.widget.NestedScrollView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guardian_logro_2_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body"
+                        android:textColor="@color/status_in_progress" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="10"
+                        android:progress="4"
+                        android:progressTint="@color/status_in_progress"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🍃"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/guardian_logro_3"
+                        android:textAppearance="@style/TextAppearance.Player1.Title"
+                        android:textColor="@color/ice_white" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="@dimen/spacing_xs">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guardian_logro_3_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+                            android:textColor="@color/grey_blue" />
+
+                    </androidx.core.widget.NestedScrollView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guardian_logro_3_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body"
+                        android:textColor="@color/status_in_progress" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="10"
+                        android:progress="6"
+                        android:progressTint="@color/status_in_progress"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💧"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/guardian_logro_4"
+                        android:textAppearance="@style/TextAppearance.Player1.Title"
+                        android:textColor="@color/ice_white" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="@dimen/spacing_xs">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guardian_logro_4_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+                            android:textColor="@color/grey_blue" />
+
+                    </androidx.core.widget.NestedScrollView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guardian_logro_4_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body"
+                        android:textColor="@color/status_in_progress" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="15"
+                        android:progress="8"
+                        android:progressTint="@color/status_in_progress"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🧘"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/guardian_logro_5"
+                        android:textAppearance="@style/TextAppearance.Player1.Title"
+                        android:textColor="@color/ice_white" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="@dimen/spacing_xs">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guardian_logro_5_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+                            android:textColor="@color/grey_blue" />
+
+                    </androidx.core.widget.NestedScrollView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guardian_logro_5_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body"
+                        android:textColor="@color/status_in_progress" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="10"
+                        android:progress="3"
+                        android:progressTint="@color/status_in_progress"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_m">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="💚"
+                        android:textSize="28sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/guardian_logro_6"
+                        android:textAppearance="@style/TextAppearance.Player1.Title"
+                        android:textColor="@color/ice_white" />
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="@dimen/spacing_xs">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/guardian_logro_6_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+                            android:textColor="@color/grey_blue" />
+
+                    </androidx.core.widget.NestedScrollView>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/guardian_logro_6_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body"
+                        android:textColor="@color/status_in_progress" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="25"
+                        android:progress="12"
+                        android:progressTint="@color/status_in_progress"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

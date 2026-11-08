@@ -215,6 +215,101 @@
     <string name="erudito_logro_6_progreso">1 / 5</string>
 
 
+    <string name="artesano_titulo">Artesano</string>
+    <string name="artesano_subtitulo">Creatividad, habilidad y creación</string>
+    <string name="artesano_nivel">Nivel 4 · Artesano</string>
+    <string name="artesano_xp">740 / 1.000 XP</string>
+    <string name="artesano_recompensa_titulo">Próxima recompensa</string>
+    <string name="artesano_recompensa">Título «Creador» · Se desbloquea en el nivel 5</string>
+    <string name="artesano_logros_titulo">LOGROS DE ARTESANO</string>
+
+    <string name="artesano_logro_1">Primera creación</string>
+    <string name="artesano_logro_1_desc">Termina tu primer proyecto personal.</string>
+    <string name="artesano_logro_1_progreso">1 / 1 · Completado</string>
+
+    <string name="artesano_logro_2">Cocinero</string>
+    <string name="artesano_logro_2_desc">Prepara 10 recetas diferentes.</string>
+    <string name="artesano_logro_2_progreso">4 / 10</string>
+
+    <string name="artesano_logro_3">Creatividad</string>
+    <string name="artesano_logro_3_desc">Completa 10 proyectos creativos.</string>
+    <string name="artesano_logro_3_progreso">3 / 10</string>
+
+    <string name="artesano_logro_4">Manitas</string>
+    <string name="artesano_logro_4_desc">Termina 5 proyectos de bricolaje o reparación.</string>
+    <string name="artesano_logro_4_progreso">2 / 5</string>
+
+    <string name="artesano_logro_5">Artista</string>
+    <string name="artesano_logro_5_desc">Completa 20 sesiones de dibujo o pintura.</string>
+    <string name="artesano_logro_5_progreso">7 / 20</string>
+
+    <string name="artesano_logro_6">Creador digital</string>
+    <string name="artesano_logro_6_desc">Termina 3 proyectos digitales.</string>
+    <string name="artesano_logro_6_progreso">1 / 3</string>
+
+    <string name="explorador_titulo">Explorador</string>
+    <string name="explorador_subtitulo">Descubrimiento, aventura y nuevas experiencias</string>
+    <string name="explorador_nivel">Nivel 4 · Explorador</string>
+    <string name="explorador_xp">740 / 1.000 XP</string>
+    <string name="explorador_recompensa_titulo">Próxima recompensa</string>
+    <string name="explorador_recompensa">Título «Viajero» · Se desbloquea en el nivel 5</string>
+    <string name="explorador_logros_titulo">LOGROS DE EXPLORADOR</string>
+
+    <string name="explorador_logro_1">Primera aventura</string>
+    <string name="explorador_logro_1_desc">Visita un lugar nuevo por primera vez.</string>
+    <string name="explorador_logro_1_progreso">1 / 1 · Completado</string>
+
+    <string name="explorador_logro_2">Viajero</string>
+    <string name="explorador_logro_2_desc">Visita 5 ciudades diferentes.</string>
+    <string name="explorador_logro_2_progreso">2 / 5</string>
+
+    <string name="explorador_logro_3">Descubridor</string>
+    <string name="explorador_logro_3_desc">Explora 10 lugares de interés.</string>
+    <string name="explorador_logro_3_progreso">4 / 10</string>
+
+    <string name="explorador_logro_4">Sin fronteras</string>
+    <string name="explorador_logro_4_desc">Realiza 3 viajes fuera de tu provincia.</string>
+    <string name="explorador_logro_4_progreso">1 / 3</string>
+
+    <string name="explorador_logro_5">Nuevas experiencias</string>
+    <string name="explorador_logro_5_desc">Prueba 10 actividades que nunca habías hecho.</string>
+    <string name="explorador_logro_5_progreso">3 / 10</string>
+
+    <string name="explorador_logro_6">Espíritu aventurero</string>
+    <string name="explorador_logro_6_desc">Completa 25 misiones de exploración.</string>
+    <string name="explorador_logro_6_progreso">9 / 25</string>
+
+    <string name="guardian_titulo">Guardián</string>
+    <string name="guardian_subtitulo">Bienestar, descanso y hábitos saludables</string>
+    <string name="guardian_nivel">Nivel 4 · Guardián</string>
+    <string name="guardian_xp">740 / 1.000 XP</string>
+    <string name="guardian_recompensa_titulo">Próxima recompensa</string>
+    <string name="guardian_recompensa">Título «Protector» · Se desbloquea en el nivel 5</string>
+    <string name="guardian_logros_titulo">LOGROS DE GUARDIÁN</string>
+
+    <string name="guardian_logro_1">Primer paso</string>
+    <string name="guardian_logro_1_desc">Completa tu primera misión de bienestar.</string>
+    <string name="guardian_logro_1_progreso">1 / 1 · Completado</string>
+
+    <string name="guardian_logro_2">Buen descanso</string>
+    <string name="guardian_logro_2_desc">Duerme al menos 8 horas durante 10 días.</string>
+    <string name="guardian_logro_2_progreso">4 / 10</string>
+
+    <string name="guardian_logro_3">Vida saludable</string>
+    <string name="guardian_logro_3_desc">Completa 10 misiones de hábitos saludables.</string>
+    <string name="guardian_logro_3_progreso">6 / 10</string>
+
+    <string name="guardian_logro_4">Hidratación</string>
+    <string name="guardian_logro_4_desc">Cumple tu objetivo diario de agua durante 15 días.</string>
+    <string name="guardian_logro_4_progreso">8 / 15</string>
+
+    <string name="guardian_logro_5">Equilibrio</string>
+    <string name="guardian_logro_5_desc">Dedica 10 sesiones a actividades de relajación.</string>
+    <string name="guardian_logro_5_progreso">3 / 10</string>
+
+    <string name="guardian_logro_6">Autocuidado</string>
+    <string name="guardian_logro_6_desc">Completa 25 misiones de cuidado personal.</string>
+    <string name="guardian_logro_6_progreso">12 / 25</string>
 
 
 </resources>

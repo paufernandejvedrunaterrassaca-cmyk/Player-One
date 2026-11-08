@@ -42,5 +42,17 @@ class HubFragment : BindingFragment<FragmentHubBinding>(FragmentHubBinding::infl
             navigateTo(EruditoFragment())
         }
 
+        binding.btnArtesano.setOnClickListener {
+            navigateTo(ArtesanoFragment())
+        }
+
+        binding.btnExplorador.setOnClickListener {
+            navigateTo(ExploradorFragment())
+        }
+
+        binding.btnGuardian.setOnClickListener {
+            navigateTo(GuardianFragment())
+        }
+
     }
 }

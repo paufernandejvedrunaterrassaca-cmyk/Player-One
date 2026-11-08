@@ -17,8 +17,8 @@
             android:layout_height="wrap_content"
             android:text="@string/gladiador_titulo"
             android:textAppearance="@style/TextAppearance.Player1.Display"
-            android:textColor="@color/gold"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textColor="@color/gold" />
 
         <TextView
             android:layout_width="match_parent"
@@ -97,13 +97,13 @@
             android:layout_height="wrap_content"
             android:columnCount="2"
             android:alignmentMode="alignMargins"
-            android:useDefaultMargins="true">
+            android:columnOrderPreserved="false">
 
-            <!-- Logro 1 -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
+                android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
                 app:cardCornerRadius="@dimen/corner_card"
                 app:strokeColor="@color/slate_blue_stroke"
@@ -129,12 +129,20 @@
                         android:text="@string/gladiador_logro_1"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/gladiador_logro_1_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gladiador_logro_1_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -157,14 +165,15 @@
                         android:progress="1"
                         android:progressTint="@color/status_completed"
                         android:progressBackgroundTint="@color/slate_blue_stroke" />
+
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Logro 2 -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
+                android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
                 app:cardCornerRadius="@dimen/corner_card"
                 app:strokeColor="@color/slate_blue_stroke"
@@ -190,12 +199,20 @@
                         android:text="@string/gladiador_logro_2"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/gladiador_logro_2_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gladiador_logro_2_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -218,14 +235,15 @@
                         android:progress="6"
                         android:progressTint="@color/status_in_progress"
                         android:progressBackgroundTint="@color/slate_blue_stroke" />
+
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Logro 3 -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
+                android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
                 app:cardCornerRadius="@dimen/corner_card"
                 app:strokeColor="@color/slate_blue_stroke"
@@ -251,12 +269,20 @@
                         android:text="@string/gladiador_logro_3"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/gladiador_logro_3_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gladiador_logro_3_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -279,14 +305,15 @@
                         android:progress="5"
                         android:progressTint="@color/status_completed"
                         android:progressBackgroundTint="@color/slate_blue_stroke" />
+
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Logro 4 -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
+                android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
                 app:cardCornerRadius="@dimen/corner_card"
                 app:strokeColor="@color/slate_blue_stroke"
@@ -312,12 +339,20 @@
                         android:text="@string/gladiador_logro_4"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/gladiador_logro_4_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gladiador_logro_4_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -340,14 +375,15 @@
                         android:progress="8"
                         android:progressTint="@color/status_in_progress"
                         android:progressBackgroundTint="@color/slate_blue_stroke" />
+
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Logro 5 -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
+                android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
                 app:cardCornerRadius="@dimen/corner_card"
                 app:strokeColor="@color/slate_blue_stroke"
@@ -373,12 +409,20 @@
                         android:text="@string/gladiador_logro_5"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/gladiador_logro_5_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gladiador_logro_5_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -401,14 +445,15 @@
                         android:progress="4"
                         android:progressTint="@color/status_in_progress"
                         android:progressBackgroundTint="@color/slate_blue_stroke" />
+
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Logro 6 -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
+                android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
                 app:cardCornerRadius="@dimen/corner_card"
                 app:strokeColor="@color/slate_blue_stroke"
@@ -434,12 +479,20 @@
                         android:text="@string/gladiador_logro_6"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/gladiador_logro_6_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gladiador_logro_6_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -462,6 +515,7 @@
                         android:progress="18"
                         android:progressTint="@color/status_in_progress"
                         android:progressBackgroundTint="@color/slate_blue_stroke" />
+
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 

@@ -14,17 +14,17 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="@string/erudito_titulo"
-            android:textAppearance="@style/TextAppearance.Player1.Display" />
+            android:textAppearance="@style/TextAppearance.Player1.Display"
+            android:gravity="center" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_s"
-            android:gravity="center"
             android:text="@string/erudito_subtitulo"
-            android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+            android:gravity="center" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -50,15 +50,15 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_xs"
+                    android:layout_marginTop="@dimen/spacing_s"
                     android:text="@string/erudito_xp"
-                    android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+                    android:textAppearance="@style/TextAppearance.Player1.Body" />
 
                 <ProgressBar
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="10dp"
-                    android:layout_marginTop="@dimen/spacing_s"
+                    android:layout_marginTop="@dimen/spacing_m"
                     android:max="1000"
                     android:progress="740"
                     android:progressTint="@color/gold"
@@ -98,7 +98,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
@@ -125,12 +125,20 @@
                         android:text="@string/erudito_logro_1"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/erudito_logro_1_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/erudito_logro_1_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -159,7 +167,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
@@ -186,12 +194,20 @@
                         android:text="@string/erudito_logro_2"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/erudito_logro_2_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/erudito_logro_2_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -220,7 +236,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
@@ -247,12 +263,20 @@
                         android:text="@string/erudito_logro_3"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/erudito_logro_3_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/erudito_logro_3_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -281,7 +305,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
@@ -308,12 +332,20 @@
                         android:text="@string/erudito_logro_4"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/erudito_logro_4_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/erudito_logro_4_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -342,7 +374,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
@@ -369,12 +401,20 @@
                         android:text="@string/erudito_logro_5"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/erudito_logro_5_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/erudito_logro_5_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
@@ -403,7 +443,7 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
-                android:layout_height="220dp"
+                android:layout_height="200dp"
                 android:layout_columnWeight="1"
                 android:layout_margin="4dp"
                 app:cardBackgroundColor="@color/slate_blue"
@@ -430,12 +470,20 @@
                         android:text="@string/erudito_logro_6"
                         android:textAppearance="@style/TextAppearance.Player1.Title" />
 
-                    <TextView
+                    <androidx.core.widget.NestedScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="56dp"
                         android:layout_marginTop="@dimen/spacing_xs"
-                        android:text="@string/erudito_logro_6_desc"
-                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+                        android:fillViewport="false"
+                        android:scrollbars="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/erudito_logro_6_desc"
+                            android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    </androidx.core.widget.NestedScrollView>
 
                     <Space
                         android:layout_width="match_parent"
