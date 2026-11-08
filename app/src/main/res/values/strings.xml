@@ -312,4 +312,46 @@
     <string name="guardian_logro_6_progreso">12 / 25</string>
 
 
+    <string name="preferencies_descripcio_tornar">Tornar enrere</string>
+    <string name="preferencies_descripcio_obrir">Obrir aquesta opció</string>
+    <string name="preferencies_descripcio_idioma_actual">Idioma actual: Català</string>
+
+    <string name="preferencies_icona_compte">Icona d’informació del compte</string>
+    <string name="preferencies_icona_seguretat">Icona de seguretat</string>
+    <string name="preferencies_icona_notificacions">Icona de notificacions</string>
+    <string name="preferencies_icona_tema">Icona del tema fosc</string>
+    <string name="preferencies_icona_mida_text">Icona de mida del text</string>
+    <string name="preferencies_icona_idioma">Icona d’idioma</string>
+    <string name="preferencies_icona_so">Icona d’efectes de so</string>
+
+    <string name="preferencies_descripcio_interruptor_tema">Interruptor del tema fosc, activat</string>
+    <string name="preferencies_descripcio_interruptor_so">Interruptor dels efectes de so, activat</string>
+
+    <string name="preferencies_subtitol">Personalitza l’aplicació al teu gust</string>
+
+    <string name="preferencies_compte">Compte</string>
+    <string name="preferencies_informacio_compte">Informació del compte</string>
+    <string name="preferencies_informacio_compte_desc">Consulta i actualitza les teves dades</string>
+    <string name="preferencies_seguretat">Seguretat</string>
+    <string name="preferencies_seguretat_desc">Canvia la contrasenya i gestiona la seguretat</string>
+    <string name="preferencies_notificacions">Notificacions</string>
+    <string name="preferencies_notificacions_desc">Configura les teves preferències de notificació</string>
+
+    <string name="preferencies_aparenca">Aparença</string>
+    <string name="preferencies_tema_fosc">Tema fosc</string>
+    <string name="preferencies_tema_fosc_desc">Activa o desactiva el tema fosc</string>
+    <string name="preferencies_mida_text">Mida del text</string>
+    <string name="preferencies_normal">Normal</string>
+    <string name="preferencies_idioma">Idioma</string>
+    <string name="preferencies_idioma_desc">Selecciona l’idioma de l’aplicació</string>
+    <string name="preferencies_idioma_actual">Català</string>
+
+    <string name="preferencies_so">So</string>
+    <string name="preferencies_efectes_so">Efectes de so</string>
+    <string name="preferencies_efectes_so_desc">Activa o desactiva els efectes de so</string>
+
+    <string name="preferencies_fletxa">›</string>
+
+
+
 </resources>
