@@ -393,6 +393,41 @@
     <string name="group_chat_enviar">Enviar</string>
 
 
+    <string name="perfil_descripcio_tornar">Tornar enrere</string>
+    <string name="perfil_titol">Perfil</string>
+    <string name="perfil_subtitol">Gestiona la teva informació personal</string>
+    <string name="perfil_descripcio_avatar">Imatge de perfil de l’usuari</string>
+    <string name="perfil_nom">Player1</string>
+    <string name="perfil_nivell">Nivell 12</string>
+
+    <string name="perfil_icona_informacio">Icona d’informació personal</string>
+    <string name="perfil_informacio">Informació personal</string>
+    <string name="perfil_informacio_desc">Nom, correu i telèfon</string>
+
+    <string name="perfil_icona_seguretat">Icona de seguretat</string>
+    <string name="perfil_seguretat">Seguretat</string>
+    <string name="perfil_seguretat_desc">Canvia la teva contrasenya</string>
+
+    <string name="perfil_icona_correu">Icona de correu electrònic</string>
+    <string name="perfil_correu">Correu electrònic</string>
+    <string name="perfil_correu_desc">Gestiona les teves preferències</string>
+
+    <string name="perfil_icona_preferencies">Icona de preferències</string>
+    <string name="perfil_preferencies">Preferències</string>
+    <string name="perfil_preferencies_desc">Personalitza l’aplicació</string>
+
+    <string name="perfil_icona_ajuda">Icona d’ajuda</string>
+    <string name="perfil_ajuda">Ajuda</string>
+    <string name="perfil_ajuda_desc">Obtén suport i més informació</string>
+
+    <string name="perfil_fletxa">›</string>
+    <string name="perfil_descripcio_tancar_sessio">Opció per tancar la sessió</string>
+    <string name="perfil_icona_tancar_sessio">Icona de tancar sessió</string>
+    <string name="perfil_tancar_sessio">Tancar sessió</string>
+    <string name="perfil_tancar_sessio_desc">Tanca la sessió al teu compte</string>
+
+
+
 
 
 </resources>
