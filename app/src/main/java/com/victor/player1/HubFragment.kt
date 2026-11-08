@@ -28,5 +28,9 @@ class HubFragment : BindingFragment<FragmentHubBinding>(FragmentHubBinding::infl
         binding.btnMissionDetail.setOnClickListener {
             navigateTo(ViewMisionFragment())
         }
+
+        binding.btnAchievements.setOnClickListener {
+            navigateTo(AchievementsFragment())
+        }
     }
 }

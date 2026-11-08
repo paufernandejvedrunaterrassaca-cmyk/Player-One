@@ -31,6 +31,10 @@
     <string name="pantalla_preferencies">Preferències</string>
     <string name="pantalla_ajuda">Ajuda</string>
     <string name="seccio_assoliments_social">Assoliments i social</string>
+    <string name="seccio_especialitzacions">ESPECIALITZACIONS I GRUPS</string>
+    <string name="pantalla_detall_grup">Detall del grup</string>
+    <string name="pantalla_detall_grup">Group Detail</string>
+
 
     <string name="inici_sessio_descripcio_tornar">Tornar</string>
     <string name="inici_sessio_titol">Benvingut de nou!</string>
@@ -130,5 +134,20 @@
     <string name="detall_missio_descripcio_icona_tipus">Icona del tipus de missió</string>
 
     <string name="detall_missio_boto_marcar_progres">Marcar el progrés</string>
+
+
+    <string name="achievements_titol">Achievements</string>
+    <string name="achievements_subtitol">Desenvolupa les teves especialitzacions</string>
+    <string name="achievements_progreso_general">Progrés general</string>
+    <string name="achievements_progreso_descripcion">Progrés de totes les branques</string>
+    <string name="achievements_progreso_porcentaje">35%</string>
+    <string name="achievements_ramas">LES TEVES ESPECIALITZACIONS</string>
+    <string name="achievements_gladiador">Gladiador</string>
+    <string name="achievements_erudito">Erudit</string>
+    <string name="achievements_artesano">Artesà</string>
+    <string name="achievements_explorador">Explorador</string>
+    <string name="achievements_guardian">Guardià</string>
+
+
 
 </resources>
