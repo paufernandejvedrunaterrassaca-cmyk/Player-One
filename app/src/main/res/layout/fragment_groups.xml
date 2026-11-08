@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/night_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/groups_titulo"
+            android:textAppearance="@style/TextAppearance.Player1.Display"
+            android:textColor="@color/ice_white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/groups_subtitulo"
+            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+            android:textColor="@color/grey_blue" />
+
+        <EditText
+            android:id="@+id/etSearchGroups"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:backgroundTint="@color/electric_blue"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/spacing_s"
+            android:hint="@string/groups_buscar_hint"
+            android:inputType="text"
+            android:paddingStart="@dimen/spacing_m"
+            android:paddingEnd="@dimen/spacing_m"
+            android:singleLine="true"
+            android:textColor="@color/ice_white"
+            android:textColorHint="@color/grey_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:layout_marginBottom="@dimen/spacing_s"
+            android:text="@string/groups_mis_grupos"
+            android:textAppearance="@style/TextAppearance.Player1.SectionLabel"
+            android:textColor="@color/gold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            app:cardBackgroundColor="@color/slate_blue"
+            app:cardCornerRadius="@dimen/corner_card"
+            app:strokeColor="@color/slate_blue_stroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_s">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGroupRobloxDetails"
+                    style="@style/Widget.Player1.Button.Tile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/groups_grupo_1_info"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/ice_white"
+                    app:backgroundTint="@color/slate_blue"
+                    app:cornerRadius="@dimen/corner_button" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGroupRobloxChat"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/spacing_s"
+                    android:gravity="center"
+                    android:text="@string/groups_abrir_chat"
+                    android:textColor="@color/night_blue"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/gold"
+                    app:cornerRadius="@dimen/corner_button" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/groups_grupo_1_desc"
+            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+            android:textColor="@color/grey_blue" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            app:cardBackgroundColor="@color/slate_blue"
+            app:cardCornerRadius="@dimen/corner_card"
+            app:strokeColor="@color/slate_blue_stroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_s">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGroupDamDetails"
+                    style="@style/Widget.Player1.Button.Tile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/groups_grupo_2_info"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/ice_white"
+                    app:backgroundTint="@color/slate_blue"
+                    app:cornerRadius="@dimen/corner_button" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGroupDamChat"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/spacing_s"
+                    android:gravity="center"
+                    android:text="@string/groups_abrir_chat"
+                    android:textColor="@color/night_blue"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/gold"
+                    app:cornerRadius="@dimen/corner_button" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/groups_grupo_2_desc"
+            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+            android:textColor="@color/grey_blue" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_m"
+            app:cardBackgroundColor="@color/slate_blue"
+            app:cardCornerRadius="@dimen/corner_card"
+            app:strokeColor="@color/slate_blue_stroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_s">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGroupFitnessDetails"
+                    style="@style/Widget.Player1.Button.Tile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/groups_grupo_3_info"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/ice_white"
+                    app:backgroundTint="@color/slate_blue"
+                    app:cornerRadius="@dimen/corner_button" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGroupFitnessChat"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/spacing_s"
+                    android:gravity="center"
+                    android:text="@string/groups_abrir_chat"
+                    android:textColor="@color/night_blue"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/gold"
+                    app:cornerRadius="@dimen/corner_button" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_m"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="@string/groups_grupo_3_desc"
+            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+            android:textColor="@color/grey_blue" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

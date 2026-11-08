@@ -34,6 +34,7 @@
     <string name="seccio_especialitzacions">ESPECIALITZACIONS I GRUPS</string>
     <string name="pantalla_detall_grup">Detall del grup</string>
     <string name="pantalla_detall_grup2">Group Detail</string>
+    <string name="pantalla_xat_grup">Group Chat</string>
 
 
     <string name="inici_sessio_descripcio_tornar">Tornar</string>
@@ -357,6 +358,21 @@
     <string name="ajuda_descripcio">Si vols obtenir més informació sobre Player1, consultar les seves funcions o resoldre qualsevol dubte, visita la nostra pàgina web.</string>
     <string name="ajuda_web">Visita la nostra pàgina web</string>
     <string name="ajuda_descripcio_web">Informació sobre la pàgina web de Player1</string>
+
+    <string name="groups_titulo">Groups</string>
+    <string name="groups_subtitulo">Encuentra grupos y conecta con otros miembros.</string>
+    <string name="groups_buscar_hint">Buscar grupos...</string>
+    <string name="groups_mis_grupos">MIS GRUPOS</string>
+
+    <string name="groups_grupo_1_info">Roblox Developers\n12 miembros · Desarrollo y programación</string>
+    <string name="groups_grupo_1_desc">12 miembros · Desarrollo y programación</string>
+    <string name="groups_grupo_2_info">Estudiantes DAM\n8 miembros · Estudios y tecnología</string>
+    <string name="groups_grupo_2_desc">8 miembros · Estudios y tecnología</string>
+    <string name="groups_grupo_3_info">Fitness Community\n15 miembros · Deporte y bienestar</string>
+    <string name="groups_grupo_3_desc">15 miembros · Deporte y bienestar</string>
+
+    <string name="groups_ver_detalles">Ver detalles</string>
+    <string name="groups_abrir_chat">Chat</string>
 
 
 
