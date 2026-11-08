@@ -30,7 +30,7 @@
             android:src="@drawable/ic_time"
             android:scaleType="fitCenter"
             android:contentDescription="@string/missions_descripcio_rellotge"
-            android:tint="@color/gold" />
+            app:tint="@color/gold" />
 
         <ImageView
             android:layout_width="38dp"
@@ -165,7 +165,7 @@
                             android:gravity="center"
                             android:text="@string/missio_entrenament_emoji"
                             android:textSize="27sp"
-                            android:contentDescription="@string/missio_entrenament_descripcio_icona" />
+                            android:importantForAccessibility="no" />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -217,8 +217,8 @@
                             android:layout_weight="1"
                             android:max="100"
                             android:progress="33"
-                            android:progressTint="@color/electric_blue"
-                            android:progressBackgroundTint="@color/slate_blue_stroke"
+                            app:progressTint="@color/electric_blue"
+                            app:progressBackgroundTint="@color/slate_blue_stroke"
                             android:contentDescription="@string/missio_entrenament_descripcio_progres" />
 
                         <TextView
@@ -243,8 +243,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/missions_recompensa_xp"
                             android:textColor="@color/ice_white"
-                            android:textSize="13sp"
-                            android:contentDescription="@string/missions_descripcio_recompensa_xp" />
+                            android:textSize="13sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -252,8 +251,7 @@
                             android:layout_marginStart="20dp"
                             android:text="@string/missions_recompensa_moneda"
                             android:textColor="@color/gold"
-                            android:textSize="13sp"
-                            android:contentDescription="@string/missions_descripcio_recompensa_moneda" />
+                            android:textSize="13sp" />
 
                     </LinearLayout>
 
@@ -290,7 +288,7 @@
                             android:gravity="center"
                             android:text="@string/missio_lectura_emoji"
                             android:textSize="27sp"
-                            android:contentDescription="@string/missio_lectura_descripcio_icona" />
+                            android:importantForAccessibility="no" />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -342,8 +340,8 @@
                             android:layout_weight="1"
                             android:max="100"
                             android:progress="60"
-                            android:progressTint="@color/electric_blue"
-                            android:progressBackgroundTint="@color/slate_blue_stroke"
+                            app:progressTint="@color/electric_blue"
+                            app:progressBackgroundTint="@color/slate_blue_stroke"
                             android:contentDescription="@string/missio_lectura_descripcio_progres" />
 
                         <TextView
@@ -368,8 +366,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/missions_recompensa_xp"
                             android:textColor="@color/ice_white"
-                            android:textSize="13sp"
-                            android:contentDescription="@string/missions_descripcio_recompensa_xp" />
+                            android:textSize="13sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -377,8 +374,7 @@
                             android:layout_marginStart="20dp"
                             android:text="@string/missions_recompensa_moneda"
                             android:textColor="@color/gold"
-                            android:textSize="13sp"
-                            android:contentDescription="@string/missions_descripcio_recompensa_moneda" />
+                            android:textSize="13sp" />
 
                     </LinearLayout>
 
@@ -414,7 +410,7 @@
                             android:gravity="center"
                             android:text="@string/missio_habitacio_emoji"
                             android:textSize="27sp"
-                            android:contentDescription="@string/missio_habitacio_descripcio_icona" />
+                            android:importantForAccessibility="no" />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -466,8 +462,8 @@
                             android:layout_weight="1"
                             android:max="100"
                             android:progress="0"
-                            android:progressTint="@color/electric_blue"
-                            android:progressBackgroundTint="@color/slate_blue_stroke"
+                            app:appTint="@color/electric_blue"
+                            app:progressBackgroundTint="@color/slate_blue_stroke"
                             android:contentDescription="@string/missio_habitacio_descripcio_progres" />
 
                         <TextView
@@ -492,8 +488,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/missions_recompensa_xp"
                             android:textColor="@color/ice_white"
-                            android:textSize="13sp"
-                            android:contentDescription="@string/missions_descripcio_recompensa_xp" />
+                            android:textSize="13sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -501,8 +496,7 @@
                             android:layout_marginStart="20dp"
                             android:text="@string/missions_recompensa_moneda"
                             android:textColor="@color/gold"
-                            android:textSize="13sp"
-                            android:contentDescription="@string/missions_descripcio_recompensa_moneda" />
+                            android:textSize="13sp" />
 
                     </LinearLayout>
 
@@ -546,7 +540,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/ic_cup"
-                    android:tint="@color/grey_blue"
+                    app:tint="@color/grey_blue"
                     android:contentDescription="@string/navegacio_descripcio_assoliments" />
 
                 <TextView
@@ -569,7 +563,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/ic_groups"
-                    android:tint="@color/grey_blue"
+                    app:tint="@color/grey_blue"
                     android:contentDescription="@string/navegacio_descripcio_grups" />
 
                 <TextView
@@ -592,7 +586,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/ic_mission"
-                    android:tint="@color/gold"
+                    app:tint="@color/gold"
                     android:contentDescription="@string/navegacio_descripcio_missions" />
 
                 <TextView
@@ -616,7 +610,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/ic_add"
-                    android:tint="@color/grey_blue"
+                    app:tint="@color/grey_blue"
                     android:contentDescription="@string/navegacio_descripcio_crear" />
 
                 <TextView
@@ -639,7 +633,7 @@
                     android:layout_width="25dp"
                     android:layout_height="25dp"
                     android:src="@drawable/ic_person"
-                    android:tint="@color/grey_blue"
+                    app:tint="@color/grey_blue"
                     android:contentDescription="@string/navegacio_descripcio_perfil" />
 
                 <TextView
