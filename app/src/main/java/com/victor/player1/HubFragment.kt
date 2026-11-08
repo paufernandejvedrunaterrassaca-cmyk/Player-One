@@ -38,5 +38,9 @@ class HubFragment : BindingFragment<FragmentHubBinding>(FragmentHubBinding::infl
             navigateTo(GladiadorFragment())
         }
 
+        binding.btnErudito.setOnClickListener {
+            navigateTo(EruditoFragment())
+        }
+
     }
 }

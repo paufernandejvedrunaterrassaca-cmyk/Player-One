@@ -182,6 +182,39 @@
     <string name="gladiador_logro_6_progreso">18 / 50</string>
 
 
+    <string name="erudito_titulo">Erudito</string>
+    <string name="erudito_subtitulo">Aprendizaje, conocimiento y curiosidad</string>
+    <string name="erudito_nivel">Nivel 4 · Erudito</string>
+    <string name="erudito_xp">740 / 1.000 XP</string>
+    <string name="erudito_recompensa_titulo">Próxima recompensa</string>
+    <string name="erudito_recompensa">Título «Intelectual» · Se desbloquea en el nivel 5</string>
+    <string name="erudito_logros_titulo">LOGROS DE ERUDITO</string>
+
+    <string name="erudito_logro_1">Primera lectura</string>
+    <string name="erudito_logro_1_desc">Termina tu primer libro.</string>
+    <string name="erudito_logro_1_progreso">1 / 1 · Completado</string>
+
+    <string name="erudito_logro_2">Lector constante</string>
+    <string name="erudito_logro_2_desc">Lee durante 30 días diferentes.</string>
+    <string name="erudito_logro_2_progreso">12 / 30</string>
+
+    <string name="erudito_logro_3">Mente curiosa</string>
+    <string name="erudito_logro_3_desc">Completa 10 misiones de aprendizaje.</string>
+    <string name="erudito_logro_3_progreso">4 / 10</string>
+
+    <string name="erudito_logro_4">Estudiante</string>
+    <string name="erudito_logro_4_desc">Dedica 20 horas al estudio.</string>
+    <string name="erudito_logro_4_progreso">8 / 20</string>
+
+    <string name="erudito_logro_5">Políglota</string>
+    <string name="erudito_logro_5_desc">Completa 10 sesiones de práctica de idiomas.</string>
+    <string name="erudito_logro_5_progreso">3 / 10</string>
+
+    <string name="erudito_logro_6">Conocimiento</string>
+    <string name="erudito_logro_6_desc">Termina 5 cursos o formaciones.</string>
+    <string name="erudito_logro_6_progreso">1 / 5</string>
+
+
 
 
 </resources>
