@@ -1,75 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="app_name" tools:ignore="Typos">Player1</string>
-    <string name="brand_name" tools:ignore="Typos">PLAYER1</string>
-    <string name="cd_logo" tools:ignore="Typos">Logotip de Player1</string>
+    <string name="nom_aplicacio" tools:ignore="Typos">Player1</string>
+    <string name="nom_marca" tools:ignore="Typos">PLAYER1</string>
+    <string name="descripcio_logo" tools:ignore="Typos">Logotip de Player1</string>
 
-    <string name="action_create_account">Crear compte</string>
-    <string name="action_login">Iniciar sessió</string>
+    <string name="accio_crear_compte">Crear compte</string>
+    <string name="accio_iniciar_sessio">Iniciar sessió</string>
 
-    <string name="welcome_tagline">Converteix la teva vida en la teva millor aventura</string>
-    <string name="welcome_description">Compleix missions reals, aconsegueix assoliments i competeix amb altres jugadors</string>
-    <string name="welcome_guest">Accedir com a convidat</string>
-    <string name="welcome_page_indicator">Pàgina 1 de 4</string>
+    <string name="benvinguda_llema">Converteix la teva vida en la teva millor aventura</string>
+    <string name="benvinguda_descripcio">Compleix missions reals, aconsegueix assoliments i competeix amb altres jugadors</string>
+    <string name="benvinguda_acces_convidat">Accedir com a convidat</string>
+    <string name="benvinguda_indicador_pagina">Pàgina 1 de 4</string>
 
-    <string name="hub_subtitle">Prototip d\'interfície · tria una pantalla</string>
-    <string name="hub_section_access">Accés</string>
-    <string name="hub_section_missions">Missions</string>
-    <string name="hub_section_create">Crear</string>
-    <string name="hub_section_profile">Perfil</string>
-    <string name="hub_welcome">Benvinguda</string>
-    <string name="hub_login">Inici de sessió</string>
-    <string name="hub_register">Registre</string>
-    <string name="hub_mission_list">Llista de missions</string>
-    <string name="hub_mission_detail">Detall de missió</string>
-    <string name="hub_tutorial">Tutorial inicial</string>
-    <string name="hub_my_missions">Les meves missions</string>
-    <string name="hub_edit_mission">Editar missió</string>
-    <string name="hub_profile">Perfil</string>
-    <string name="hub_settings">Preferències</string>
-    <string name="hub_help">Ajuda</string>
+    <string name="centre_control_subtitol">Prototip d\'interfície · tria una pantalla</string>
+    <string name="seccio_acces">Accés</string>
+    <string name="seccio_missions">Missions</string>
+    <string name="seccio_creacio">Crear</string>
+    <string name="seccio_perfil">Perfil</string>
+    <string name="pantalla_benvinguda">Benvinguda</string>
+    <string name="pantalla_inici_sessio">Inici de sessió</string>
+    <string name="pantalla_registre">Registre</string>
+    <string name="pantalla_llista_missions">Llista de missions</string>
+    <string name="pantalla_detall_missio">Detall de missió</string>
+    <string name="pantalla_tutorial">Tutorial inicial</string>
+    <string name="pantalla_meves_missions">Les meves missions</string>
+    <string name="pantalla_editar_missio">Editar missió</string>
+    <string name="pantalla_perfil">Perfil</string>
+    <string name="pantalla_preferencies">Preferències</string>
+    <string name="pantalla_ajuda">Ajuda</string>
 
-    <string name="login_back_description">Tornar</string>
-    <string name="login_title">Benvingut de nou!</string>
-    <string name="login_subtitle">Inicia sessió al teu compte</string>
-    <string name="login_email_hint">Introdueix el teu correu electrònic</string>
-    <string name="login_password_hint">Introdueix la teva contrasenya</string>
-    <string name="login_forgot_password">Has oblidat la contrasenya?</string>
-    <string name="login_button">Iniciar sessió</string>
-    <string name="login_continue_with">o continua amb</string>
-    <string name="login_google">Iniciar sessió amb Google</string>
-    <string name="login_apple">Iniciar sessió amb Apple</string>
-    <string name="login_facebook">Iniciar sessió amb Facebook</string>
-    <string name="login_no_account">No tens compte?</string>
-    <string name="login_create_account">Crear compte</string>
+    <string name="inici_sessio_descripcio_tornar">Tornar</string>
+    <string name="inici_sessio_titol">Benvingut de nou!</string>
+    <string name="inici_sessio_subtitol">Inicia sessió al teu compte</string>
+    <string name="inici_sessio_correu_indicacio">Introdueix el teu correu electrònic</string>
+    <string name="inici_sessio_contrasenya_indicacio">Introdueix la teva contrasenya</string>
+    <string name="inici_sessio_contrasenya_oblidada">Has oblidat la contrasenya?</string>
+    <string name="inici_sessio_boto">Iniciar sessió</string>
+    <string name="inici_sessio_continuar_amb">o continua amb</string>
+    <string name="inici_sessio_google">Iniciar sessió amb Google</string>
+    <string name="inici_sessio_apple">Iniciar sessió amb Apple</string>
+    <string name="inici_sessio_facebook">Iniciar sessió amb Facebook</string>
+    <string name="inici_sessio_sense_compte">No tens compte?</string>
+    <string name="inici_sessio_crear_compte">Crear compte</string>
 
-    <string name="register_title">Crea el teu compte</string>
-    <string name="register_subtitle">Comença la teva aventura</string>
-    <string name="register_avatar_description">Imatge de perfil</string>
-    <string name="register_camera_description">Canvia la imatge de perfil</string>
-    <string name="register_username_hint">Nom d\'usuari</string>
-    <string name="register_email_hint">Correu electrònic</string>
-    <string name="register_password_hint">Contrasenya</string>
-    <string name="register_confirm_password_hint">Confirma la contrasenya</string>
-    <string name="register_button">Crear compte</string>
-    <string name="register_have_account">Ja tens un compte?</string>
-    <string name="register_login">Iniciar sessió</string>
+    <string name="registre_titol">Crea el teu compte</string>
+    <string name="registre_subtitol">Comença la teva aventura</string>
+    <string name="registre_descripcio_avatar">Imatge de perfil</string>
+    <string name="registre_descripcio_camera">Canvia la imatge de perfil</string>
+    <string name="registre_correu_indicacio">Correu electrònic</string>
+    <string name="registre_nom_usuari_indicacio">Nom d\'usuari</string>
+    <string name="registre_contrasenya_indicacio">Contrasenya</string>
+    <string name="registre_confirmar_contrasenya_indicacio">Confirma la contrasenya</string>
+    <string name="registre_boto">Crear compte</string>
+    <string name="registre_ja_tens_compte">Ja tens un compte?</string>
+    <string name="registre_iniciar_sessio">Iniciar sessió</string>
 
+    <string name="missions_nivell">4</string>
+    <string name="missions_titol">Missions</string>
+    <string name="missions_descripcio_nivell">Nivell actual del jugador: 4</string>
+    <string name="missions_descripcio_rellotge">Accedir a les missions temporals</string>
+    <string name="missions_descripcio_escut">Accedir a les missions permanents</string>
 
+    <string name="missions_pestanya_totes">Totes</string>
+    <string name="missions_pestanya_diaries">Diàries</string>
+    <string name="missions_pestanya_setmanals">Setmanals</string>
+    <string name="missions_pestanya_mensuals">Mensuals</string>
 
-    <string name="missions_level">4</string>
-    <string name="missions_title">Missions</string>
+    <string name="missio_entrenament_emoji">🏋️</string>
+    <string name="missio_entrenament_descripcio_icona">Icona d\'entrenament</string>
+    <string name="missio_entrenament_titol">Entrena 3 vegades</string>
+    <string name="missio_entrenament_descripcio">Completa 3 sessions d\'entrenament</string>
+    <string name="missio_entrenament_progres">1 / 3</string>
+    <string name="missio_entrenament_descripcio_progres">Progrés de l\'entrenament: 1 de 3 sessions</string>
 
-    <string name="missions_tab_all">Totes</string>
-    <string name="missions_tab_daily">Diàries</string>
-    <string name="missions_tab_weekly">Setmanals</string>
-    <string name="missions_tab_monthly">Mensuals</string>
+    <string name="missio_lectura_emoji">📖</string>
+    <string name="missio_lectura_descripcio_icona">Icona de lectura</string>
+    <string name="missio_lectura_titol">Llegeix 20 pàgines</string>
+    <string name="missio_lectura_descripcio">Avança en la lectura d\'avui</string>
+    <string name="missio_lectura_progres">12 / 20</string>
+    <string name="missio_lectura_descripcio_progres">Progrés de lectura: 12 de 20 pàgines</string>
 
-    <string name="missions_level_description">Nivell actual del jugador: 4</string>
-    <string name="missions_clock_description">Temps restant de les missions</string>
-    <string name="missions_shield_description">Recompenses i classificació de missions</string>
+    <string name="missio_habitacio_emoji">📦</string>
+    <string name="missio_habitacio_descripcio_icona">Icona d\'organització de la llar</string>
+    <string name="missio_habitacio_titol">Endreça la teva habitació</string>
+    <string name="missio_habitacio_descripcio">Deixa el teu espai net i ordenat</string>
+    <string name="missio_habitacio_progres">0 / 1</string>
+    <string name="missio_habitacio_descripcio_progres">Progrés d\'organització: 0 d\'1 tasca</string>
 
+    <string name="missions_estat_progres">En progrés</string>
+    <string name="missions_estat_pendent">Pendent</string>
 
+    <string name="missions_recompensa_xp">✦ +50 XP</string>
+    <string name="missions_descripcio_recompensa_xp">Recompensa de 50 punts d\'experiència</string>
+    <string name="missions_recompensa_moneda">🪙 +100 monedes</string>
+    <string name="missions_descripcio_recompensa_moneda">Recompensa de 100 monedes</string>
+
+    <string name="navegacio_assoliments">Assoliments</string>
+    <string name="navegacio_grups">Grups</string>
+    <string name="navegacio_missions">Missions</string>
+    <string name="navegacio_crear">Crear</string>
+    <string name="navegacio_perfil">Perfil</string>
+
+    <string name="navegacio_descripcio_assoliments">Accedir als assoliments</string>
+    <string name="navegacio_descripcio_grups">Accedir als grups</string>
+    <string name="navegacio_descripcio_missions">Accedir a les missions</string>
+    <string name="navegacio_descripcio_crear">Accedir a la creació de missions</string>
+    <string name="navegacio_descripcio_perfil">Accedir al perfil</string>
+
+    <string name="detall_missio_descripcio_menu">Més opcions de la missió</string>
+    <string name="detall_missio_titol_recompenses">Recompenses</string>
+
+    <string name="detall_missio_valor_xp">+50</string>
+    <string name="detall_missio_etiqueta_xp">XP</string>
+    <string name="detall_missio_descripcio_icona_xp">Icona de punts d\'experiència</string>
+
+    <string name="detall_missio_valor_moneda">+100</string>
+    <string name="detall_missio_etiqueta_moneda">Monedes</string>
+    <string name="detall_missio_descripcio_icona_moneda">Icona de monedes</string>
+
+    <string name="detall_missio_etiqueta_frequencia">Freqüència</string>
+    <string name="detall_missio_valor_frequencia">Diària</string>
+    <string name="detall_missio_descripcio_icona_frequencia">Icona de freqüència de la missió</string>
+
+    <string name="detall_missio_etiqueta_tipus">Tipus</string>
+    <string name="detall_missio_valor_tipus">Temporal</string>
+    <string name="detall_missio_descripcio_icona_tipus">Icona del tipus de missió</string>
+
+    <string name="detall_missio_boto_marcar_progres">Marcar el progrés</string>
 
 </resources>

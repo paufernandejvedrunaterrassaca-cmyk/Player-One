@@ -35,16 +35,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:accessibilityHeading="true"
-            tools:targetApi="28"
+                    tools:targetApi="28"
                     android:letterSpacing="0.08"
-                    android:text="@string/brand_name"
+                    android:text="@string/nom_marca"
                     android:textAppearance="@style/TextAppearance.Player1.Headline"
                     android:textColor="@color/gold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/hub_subtitle"
+                    android:text="@string/centre_control_subtitol"
                     android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
             </LinearLayout>
         </LinearLayout>
@@ -55,7 +55,7 @@
             android:layout_marginTop="@dimen/spacing_l"
             android:accessibilityHeading="true"
             tools:targetApi="28"
-            android:text="@string/hub_section_access"
+            android:text="@string/seccio_acces"
             android:textAppearance="@style/TextAppearance.Player1.SectionLabel" />
 
         <LinearLayout
@@ -71,7 +71,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/hub_welcome"
+                android:text="@string/pantalla_benvinguda"
                 app:icon="@drawable/ic_flag" />
 
             <Space
@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="false"
-                android:text="@string/hub_login"
+                android:text="@string/pantalla_inici_sessio"
                 app:icon="@drawable/ic_login" />
         </LinearLayout>
 
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="false"
-                android:text="@string/hub_register"
+                android:text="@string/pantalla_registre"
                 app:icon="@drawable/ic_person_add" />
         </LinearLayout>
 
@@ -113,7 +113,7 @@
             android:layout_marginTop="@dimen/spacing_l"
             android:accessibilityHeading="true"
             tools:targetApi="28"
-            android:text="@string/hub_section_missions"
+            android:text="@string/seccio_missions"
             android:textAppearance="@style/TextAppearance.Player1.SectionLabel" />
 
         <LinearLayout
@@ -130,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="false"
-                android:text="@string/hub_mission_list"
+                android:text="@string/pantalla_llista_missions"
                 app:icon="@drawable/ic_list" />
 
             <Space
@@ -144,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="false"
-                android:text="@string/hub_mission_detail"
+                android:text="@string/pantalla_detall_missio"
                 app:icon="@drawable/ic_visibility" />
         </LinearLayout>
 
@@ -162,7 +162,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="false"
-                android:text="@string/hub_tutorial"
+                android:text="@string/pantalla_tutorial"
                 app:icon="@drawable/ic_lightbulb" />
         </LinearLayout>
 
@@ -172,7 +172,7 @@
             android:layout_marginTop="@dimen/spacing_l"
             android:accessibilityHeading="true"
             tools:targetApi="28"
-            android:text="@string/hub_section_create"
+            android:text="@string/seccio_creacio"
             android:textAppearance="@style/TextAppearance.Player1.SectionLabel" />
 
         <LinearLayout
@@ -189,7 +189,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="false"
-                android:text="@string/hub_my_missions"
+                android:text="@string/pantalla_meves_missions"
                 app:icon="@drawable/ic_add_circle" />
 
             <Space
@@ -203,7 +203,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="false"
-                android:text="@string/hub_edit_mission"
+                android:text="@string/pantalla_editar_missio"
                 app:icon="@drawable/ic_edit" />
         </LinearLayout>
 
@@ -213,7 +213,7 @@
             android:layout_marginTop="@dimen/spacing_l"
             android:accessibilityHeading="true"
             tools:targetApi="28"
-            android:text="@string/hub_section_profile"
+            android:text="@string/seccio_perfil"
             android:textAppearance="@style/TextAppearance.Player1.SectionLabel" />
 
         <LinearLayout
@@ -230,7 +230,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="false"
-                android:text="@string/hub_profile"
+                android:text="@string/pantalla_perfil"
                 app:icon="@drawable/ic_person" />
 
             <Space
@@ -244,7 +244,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="false"
-                android:text="@string/hub_settings"
+                android:text="@string/pantalla_preferencies"
                 app:icon="@drawable/ic_settings" />
         </LinearLayout>
 
@@ -262,7 +262,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:enabled="false"
-                android:text="@string/hub_help"
+                android:text="@string/pantalla_ajuda"
                 app:icon="@drawable/ic_help" />
         </LinearLayout>
     </LinearLayout>

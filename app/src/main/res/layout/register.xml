@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -22,281 +23,290 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_gravity="top|start"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/arrow_back"
         app:tint="@color/ice_white"
         android:scaleType="fitCenter"
-        android:contentDescription="@string/login_back_description" />
+        android:contentDescription="@string/inici_sessio_descripcio_tornar" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top|center_horizontal"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="58dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/register_title"
-            android:textColor="@color/ice_white"
-            android:textSize="36sp"
-            android:textStyle="bold"
-            android:gravity="center" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="@string/register_subtitle"
-            android:textColor="@color/ice_white"
-            android:textSize="22sp"
-            android:gravity="center" />
-
-        <FrameLayout
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:layout_marginTop="20dp">
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="158dp"
-                android:layout_height="158dp"
-                android:layout_gravity="center"
-                app:cardBackgroundColor="@color/slate_blue"
-                app:cardCornerRadius="79dp"
-                app:strokeColor="@color/ice_white"
-                app:strokeWidth="2dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/bg_welcome"
-                    android:scaleType="centerCrop"
-                    android:contentDescription="@string/register_avatar_description" />
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="46dp"
-                android:layout_height="46dp"
-                android:layout_gravity="bottom|end"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                app:cardBackgroundColor="@color/night_blue"
-                app:cardCornerRadius="23dp"
-                app:strokeColor="@color/slate_blue_stroke"
-                app:strokeWidth="1dp">
-
-                <ImageView
-                    android:layout_width="27dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:contentDescription="@string/register_camera_description"
-                    android:src="@drawable/ic_add_photo"
-                    app:tint="@color/ice_white" />
-
-            </com.google.android.material.card.MaterialCardView>
-
-        </FrameLayout>
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="125dp"
+        android:fillViewport="false"
+        android:clipToPadding="false">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                app:cardBackgroundColor="@color/night_blue"
-                app:cardCornerRadius="14dp"
-                app:strokeColor="@color/slate_blue_stroke"
-                app:strokeWidth="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registre_titol"
+                android:textColor="@color/ice_white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:gravity="center" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingStart="18dp"
-                    android:paddingEnd="18dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/registre_subtitol"
+                android:textColor="@color/ice_white"
+                android:textSize="22sp"
+                android:gravity="center" />
+
+            <FrameLayout
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="158dp"
+                    android:layout_height="158dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/slate_blue"
+                    app:cardCornerRadius="79dp"
+                    app:strokeColor="@color/ice_white"
+                    app:strokeWidth="2dp">
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/ic_person"
-                        app:tint="@color/ice_white"
-                        android:contentDescription="@null" />
-
-                    <EditText
-                        android:id="@+id/edit_username"
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_marginStart="18dp"
-                        android:background="@android:color/transparent"
-                        android:hint="@string/register_username_hint"
-                        android:inputType="textPersonName"
-                        android:singleLine="true"
-                        android:textColor="@color/ice_white"
-                        android:textColorHint="@color/grey_blue"
-                        android:textSize="16sp"
-                        android:autofillHints="username" />
+                        android:src="@drawable/bg_welcome"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/registre_descripcio_avatar" />
 
-                </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
 
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:layout_marginTop="12dp"
-                app:cardBackgroundColor="@color/night_blue"
-                app:cardCornerRadius="14dp"
-                app:strokeColor="@color/slate_blue_stroke"
-                app:strokeWidth="1dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingStart="18dp"
-                    android:paddingEnd="18dp">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardBackgroundColor="@color/night_blue"
+                    app:cardCornerRadius="23dp"
+                    app:strokeColor="@color/slate_blue_stroke"
+                    app:strokeWidth="1dp">
 
                     <ImageView
-                        android:layout_width="25dp"
+                        android:layout_width="27dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/ic_mail"
-                        app:tint="@color/ice_white"
-                        android:contentDescription="@null" />
-
-                    <EditText
-                        android:id="@+id/edit_register_email"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_marginStart="18dp"
-                        android:background="@android:color/transparent"
-                        android:hint="@string/register_email_hint"
-                        android:inputType="textEmailAddress"
-                        android:singleLine="true"
-                        android:textColor="@color/ice_white"
-                        android:textColorHint="@color/grey_blue"
-                        android:textSize="16sp"
-                        android:autofillHints="emailAddress" />
-
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="62dp"
-                android:layout_marginTop="12dp"
-                app:cardBackgroundColor="@color/night_blue"
-                app:cardCornerRadius="14dp"
-                app:strokeColor="@color/slate_blue_stroke"
-                app:strokeWidth="1dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingStart="18dp"
-                    android:paddingEnd="18dp">
-
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="20dp"
-                        android:contentDescription="@null"
-                        android:src="@drawable/ic_padlock"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/registre_descripcio_camera"
+                        android:src="@drawable/ic_add_photo"
                         app:tint="@color/ice_white" />
 
-                    <EditText
-                        android:id="@+id/edit_register_password"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_marginStart="18dp"
-                        android:background="@android:color/transparent"
-                        android:hint="@string/register_password_hint"
-                        android:inputType="textPassword"
-                        android:singleLine="true"
-                        android:textColor="@color/ice_white"
-                        android:textColorHint="@color/grey_blue"
-                        android:textSize="16sp"
-                        android:autofillHints="newPassword" />
+                </com.google.android.material.card.MaterialCardView>
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/ic_visibility"
-                        app:tint="@color/ice_white"
-                        android:contentDescription="@null" />
+            </FrameLayout>
 
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="62dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
-                app:cardBackgroundColor="@color/night_blue"
-                app:cardCornerRadius="14dp"
-                app:strokeColor="@color/slate_blue_stroke"
-                app:strokeWidth="1dp">
+                android:orientation="vertical">
 
-                <LinearLayout
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingStart="18dp"
-                    android:paddingEnd="18dp">
+                    android:layout_height="62dp"
+                    app:cardBackgroundColor="@color/night_blue"
+                    app:cardCornerRadius="14dp"
+                    app:strokeColor="@color/slate_blue_stroke"
+                    app:strokeWidth="1dp">
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/ic_padlock"
-                        app:tint="@color/ice_white"
-                        android:contentDescription="@null" />
-
-                    <EditText
-                        android:id="@+id/edit_confirm_password"
-                        android:layout_width="0dp"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_marginStart="18dp"
-                        android:background="@android:color/transparent"
-                        android:hint="@string/register_confirm_password_hint"
-                        android:inputType="textPassword"
-                        android:singleLine="true"
-                        android:textColor="@color/ice_white"
-                        android:textColorHint="@color/grey_blue"
-                        android:textSize="16sp"
-                        android:autofillHints="newPassword" />
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp">
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:src="@drawable/ic_visibility"
-                        app:tint="@color/ice_white"
-                        android:contentDescription="@null" />
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_person"
+                            app:tint="@color/ice_white"
+                            android:contentDescription="@null" />
 
-                </LinearLayout>
+                        <EditText
+                            android:id="@+id/edit_username"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginStart="18dp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/registre_nom_usuari_indicacio"
+                            android:inputType="textPersonName"
+                            android:singleLine="true"
+                            android:textColor="@color/ice_white"
+                            android:textColorHint="@color/grey_blue"
+                            android:textSize="16sp"
+                            android:autofillHints="username" />
 
-            </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="@color/night_blue"
+                    app:cardCornerRadius="14dp"
+                    app:strokeColor="@color/slate_blue_stroke"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_mail"
+                            app:tint="@color/ice_white"
+                            android:contentDescription="@null" />
+
+                        <EditText
+                            android:id="@+id/edit_register_email"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginStart="18dp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/registre_correu_indicacio"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:textColor="@color/ice_white"
+                            android:textColorHint="@color/grey_blue"
+                            android:textSize="16sp"
+                            android:autofillHints="emailAddress" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="@color/night_blue"
+                    app:cardCornerRadius="14dp"
+                    app:strokeColor="@color/slate_blue_stroke"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="20dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_padlock"
+                            app:tint="@color/ice_white" />
+
+                        <EditText
+                            android:id="@+id/edit_register_password"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginStart="18dp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/registre_contrasenya_indicacio"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:textColor="@color/ice_white"
+                            android:textColorHint="@color/grey_blue"
+                            android:textSize="16sp"
+                            android:autofillHints="newPassword" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_visibility"
+                            app:tint="@color/ice_white"
+                            android:contentDescription="@null" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:layout_marginTop="12dp"
+                    app:cardBackgroundColor="@color/night_blue"
+                    app:cardCornerRadius="14dp"
+                    app:strokeColor="@color/slate_blue_stroke"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_padlock"
+                            app:tint="@color/ice_white"
+                            android:contentDescription="@null" />
+
+                        <EditText
+                            android:id="@+id/edit_confirm_password"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginStart="18dp"
+                            android:background="@android:color/transparent"
+                            android:hint="@string/registre_confirmar_contrasenya_indicacio"
+                            android:inputType="textPassword"
+                            android:singleLine="true"
+                            android:textColor="@color/ice_white"
+                            android:textColorHint="@color/grey_blue"
+                            android:textSize="16sp"
+                            android:autofillHints="newPassword" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_visibility"
+                            app:tint="@color/ice_white"
+                            android:contentDescription="@null" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -312,7 +322,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:backgroundTint="@color/gold"
-            android:text="@string/register_button"
+            android:text="@string/registre_boto"
             android:textColor="@color/night_blue"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -331,7 +341,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/register_have_account"
+                android:text="@string/registre_ja_tens_compte"
                 android:textColor="@color/ice_white"
                 android:textSize="16sp" />
 
@@ -339,7 +349,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:backgroundTint="@android:color/transparent"
-                android:text="@string/register_login"
+                android:text="@string/registre_iniciar_sessio"
                 android:textColor="@color/electric_blue"
                 android:textSize="16sp"
                 android:textStyle="bold"
