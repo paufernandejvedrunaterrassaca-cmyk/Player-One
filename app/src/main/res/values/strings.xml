@@ -33,7 +33,7 @@
     <string name="seccio_assoliments_social">Assoliments i social</string>
     <string name="seccio_especialitzacions">ESPECIALITZACIONS I GRUPS</string>
     <string name="pantalla_detall_grup">Detall del grup</string>
-    <string name="pantalla_detall_grup">Group Detail</string>
+    <string name="pantalla_detall_grup2">Group Detail</string>
 
 
     <string name="inici_sessio_descripcio_tornar">Tornar</string>
@@ -147,6 +147,40 @@
     <string name="achievements_artesano">Artesà</string>
     <string name="achievements_explorador">Explorador</string>
     <string name="achievements_guardian">Guardià</string>
+
+
+    <string name="gladiador_titulo">Gladiador</string>
+    <string name="gladiador_subtitulo">Fuerza, disciplina y superación personal</string>
+    <string name="gladiador_nivel">Nivel 4 · Gladiador</string>
+    <string name="gladiador_xp">740 / 1.000 XP</string>
+    <string name="gladiador_recompensa_titulo">Próxima recompensa</string>
+    <string name="gladiador_recompensa">Título «Combatiente» · Se desbloquea en el nivel 5</string>
+    <string name="gladiador_logros_titulo">LOGROS DE GLADIADOR</string>
+
+    <string name="gladiador_logro_1">Primer entrenamiento</string>
+    <string name="gladiador_logro_1_desc">Completa tu primera misión de ejercicio físico.</string>
+    <string name="gladiador_logro_1_progreso">1 / 1 · Completado</string>
+
+    <string name="gladiador_logro_2">Disciplina</string>
+    <string name="gladiador_logro_2_desc">Ve al gimnasio 10 veces.</string>
+    <string name="gladiador_logro_2_progreso">6 / 10</string>
+
+    <string name="gladiador_logro_3">Fuerza creciente</string>
+    <string name="gladiador_logro_3_desc">Completa 5 entrenamientos de fuerza.</string>
+    <string name="gladiador_logro_3_progreso">5 / 5 · Completado</string>
+
+    <string name="gladiador_logro_4">Resistencia</string>
+    <string name="gladiador_logro_4_desc">Sal a correr 20 veces.</string>
+    <string name="gladiador_logro_4_progreso">8 / 20</string>
+
+    <string name="gladiador_logro_5">Constancia</string>
+    <string name="gladiador_logro_5_desc">Entrena durante 7 días diferentes.</string>
+    <string name="gladiador_logro_5_progreso">4 / 7</string>
+
+    <string name="gladiador_logro_6">Atleta</string>
+    <string name="gladiador_logro_6_desc">Completa 50 misiones deportivas.</string>
+    <string name="gladiador_logro_6_progreso">18 / 50</string>
+
 
 
 

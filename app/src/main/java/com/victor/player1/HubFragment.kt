@@ -1,3 +1,4 @@
+
 package com.victor.player1
 
 import android.os.Bundle
@@ -32,5 +33,10 @@ class HubFragment : BindingFragment<FragmentHubBinding>(FragmentHubBinding::infl
         binding.btnAchievements.setOnClickListener {
             navigateTo(AchievementsFragment())
         }
+
+        binding.btnGladiador.setOnClickListener {
+            navigateTo(GladiadorFragment())
+        }
+
     }
 }

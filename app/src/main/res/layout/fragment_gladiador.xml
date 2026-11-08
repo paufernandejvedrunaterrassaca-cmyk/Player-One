@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gladiador_titulo"
+            android:textAppearance="@style/TextAppearance.Player1.Display"
+            android:textColor="@color/gold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_s"
+            android:text="@string/gladiador_subtitulo"
+            android:textAppearance="@style/TextAppearance.Player1.BodySecondary"
+            android:gravity="center" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            app:cardBackgroundColor="@color/slate_blue"
+            app:cardCornerRadius="@dimen/corner_card"
+            app:strokeColor="@color/slate_blue_stroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_m">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gladiador_nivel"
+                    android:textAppearance="@style/TextAppearance.Player1.Title"
+                    android:textColor="@color/gold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_s"
+                    android:text="@string/gladiador_xp"
+                    android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:max="1000"
+                    android:progress="740"
+                    android:progressTint="@color/gold"
+                    android:progressBackgroundTint="@color/slate_blue_stroke" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_m"
+                    android:text="@string/gladiador_recompensa_titulo"
+                    android:textAppearance="@style/TextAppearance.Player1.Title" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_xs"
+                    android:text="@string/gladiador_recompensa"
+                    android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:layout_marginBottom="@dimen/spacing_m"
+            android:text="@string/gladiador_logros_titulo"
+            android:textAppearance="@style/TextAppearance.Player1.Title" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true">
+
+            <!-- Logro 1 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_s">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_flag"
+                        android:contentDescription="@null"
+                        app:tint="@color/gold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_1"
+                        android:textAppearance="@style/TextAppearance.Player1.Title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/gladiador_logro_1_desc"
+                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_1_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="1"
+                        android:progress="1"
+                        android:progressTint="@color/status_completed"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Logro 2 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_s">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_cup"
+                        android:contentDescription="@null"
+                        app:tint="@color/gold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_2"
+                        android:textAppearance="@style/TextAppearance.Player1.Title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/gladiador_logro_2_desc"
+                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_2_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="10"
+                        android:progress="6"
+                        android:progressTint="@color/status_in_progress"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Logro 3 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_s">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_visibility"
+                        android:contentDescription="@null"
+                        app:tint="@color/gold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_3"
+                        android:textAppearance="@style/TextAppearance.Player1.Title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/gladiador_logro_3_desc"
+                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_3_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="5"
+                        android:progress="5"
+                        android:progressTint="@color/status_completed"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Logro 4 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_s">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_flag"
+                        android:contentDescription="@null"
+                        app:tint="@color/gold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_4"
+                        android:textAppearance="@style/TextAppearance.Player1.Title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/gladiador_logro_4_desc"
+                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_4_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="20"
+                        android:progress="8"
+                        android:progressTint="@color/status_in_progress"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Logro 5 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_s">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_cup"
+                        android:contentDescription="@null"
+                        app:tint="@color/gold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_5"
+                        android:textAppearance="@style/TextAppearance.Player1.Title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/gladiador_logro_5_desc"
+                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_5_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="7"
+                        android:progress="4"
+                        android:progressTint="@color/status_in_progress"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Logro 6 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_columnWeight="1"
+                app:cardBackgroundColor="@color/slate_blue"
+                app:cardCornerRadius="@dimen/corner_card"
+                app:strokeColor="@color/slate_blue_stroke"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_s">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_cup"
+                        android:contentDescription="@null"
+                        app:tint="@color/gold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_6"
+                        android:textAppearance="@style/TextAppearance.Player1.Title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:text="@string/gladiador_logro_6_desc"
+                        android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_s"
+                        android:text="@string/gladiador_logro_6_progreso"
+                        android:textAppearance="@style/TextAppearance.Player1.Body" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="@dimen/spacing_xs"
+                        android:max="50"
+                        android:progress="18"
+                        android:progressTint="@color/status_in_progress"
+                        android:progressBackgroundTint="@color/slate_blue_stroke" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
