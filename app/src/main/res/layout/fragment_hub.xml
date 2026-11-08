@@ -4,13 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
     tools:context=".HubFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="@dimen/screen_padding">
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingTop="@dimen/screen_padding"
+        android:paddingEnd="@dimen/screen_padding"
+        android:paddingBottom="32dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,17 +38,17 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:accessibilityHeading="true"
-                    tools:targetApi="28"
                     android:letterSpacing="0.08"
                     android:text="@string/nom_marca"
                     android:textAppearance="@style/TextAppearance.Player1.Headline"
-                    android:textColor="@color/gold" />
+                    android:textColor="@color/gold"
+                    tools:targetApi="28" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/centre_control_subtitol"
                     android:textAppearance="@style/TextAppearance.Player1.BodySecondary" />
@@ -50,13 +56,14 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_l"
             android:accessibilityHeading="true"
-            tools:targetApi="28"
+            android:ellipsize="end"
             android:text="@string/seccio_acces"
-            android:textAppearance="@style/TextAppearance.Player1.SectionLabel" />
+            android:textAppearance="@style/TextAppearance.Player1.SectionLabel"
+            tools:targetApi="28" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -71,11 +78,16 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
                 android:text="@string/pantalla_benvinguda"
                 app:icon="@drawable/ic_flag" />
 
             <Space
-                android:layout_width="@dimen/spacing_s"
+                android:layout_width="8dp"
                 android:layout_height="0dp" />
 
             <com.google.android.material.button.MaterialButton
@@ -84,6 +96,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
                 android:enabled="false"
                 android:text="@string/pantalla_inici_sessio"
                 app:icon="@drawable/ic_login" />
@@ -102,19 +119,25 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
                 android:enabled="false"
                 android:text="@string/pantalla_registre"
                 app:icon="@drawable/ic_person_add" />
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_l"
             android:accessibilityHeading="true"
-            tools:targetApi="28"
+            android:ellipsize="end"
             android:text="@string/seccio_missions"
-            android:textAppearance="@style/TextAppearance.Player1.SectionLabel" />
+            android:textAppearance="@style/TextAppearance.Player1.SectionLabel"
+            tools:targetApi="28" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -129,12 +152,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
                 android:enabled="false"
                 android:text="@string/pantalla_llista_missions"
                 app:icon="@drawable/ic_list" />
 
             <Space
-                android:layout_width="@dimen/spacing_s"
+                android:layout_width="8dp"
                 android:layout_height="0dp" />
 
             <com.google.android.material.button.MaterialButton
@@ -143,10 +171,25 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
                 android:enabled="false"
                 android:text="@string/pantalla_detall_missio"
                 app:icon="@drawable/ic_visibility" />
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_l"
+            android:accessibilityHeading="true"
+            android:ellipsize="end"
+            android:text="@string/seccio_assoliments_social"
+            android:textAppearance="@style/TextAppearance.Player1.SectionLabel"
+            tools:targetApi="28" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -156,24 +199,47 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btn_tutorial"
+                android:id="@+id/btn_achievements"
                 style="@style/Widget.Player1.Button.Tile"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:enabled="false"
-                android:text="@string/pantalla_tutorial"
-                app:icon="@drawable/ic_lightbulb" />
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
+                android:text="@string/pantalla_assoliments"
+                app:icon="@drawable/ic_cup" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_groups"
+                style="@style/Widget.Player1.Button.Tile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
+                android:text="@string/pantalla_grups"
+                app:icon="@drawable/ic_groups" />
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_l"
             android:accessibilityHeading="true"
-            tools:targetApi="28"
+            android:ellipsize="end"
             android:text="@string/seccio_creacio"
-            android:textAppearance="@style/TextAppearance.Player1.SectionLabel" />
+            android:textAppearance="@style/TextAppearance.Player1.SectionLabel"
+            tools:targetApi="28" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -188,12 +254,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
                 android:enabled="false"
                 android:text="@string/pantalla_meves_missions"
                 app:icon="@drawable/ic_add_circle" />
 
             <Space
-                android:layout_width="@dimen/spacing_s"
+                android:layout_width="8dp"
                 android:layout_height="0dp" />
 
             <com.google.android.material.button.MaterialButton
@@ -202,19 +273,25 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
                 android:enabled="false"
                 android:text="@string/pantalla_editar_missio"
                 app:icon="@drawable/ic_edit" />
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_l"
             android:accessibilityHeading="true"
-            tools:targetApi="28"
+            android:ellipsize="end"
             android:text="@string/seccio_perfil"
-            android:textAppearance="@style/TextAppearance.Player1.SectionLabel" />
+            android:textAppearance="@style/TextAppearance.Player1.SectionLabel"
+            tools:targetApi="28" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -229,12 +306,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
                 android:enabled="false"
                 android:text="@string/pantalla_perfil"
                 app:icon="@drawable/ic_person" />
 
             <Space
-                android:layout_width="@dimen/spacing_s"
+                android:layout_width="8dp"
                 android:layout_height="0dp" />
 
             <com.google.android.material.button.MaterialButton
@@ -243,6 +325,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
                 android:enabled="false"
                 android:text="@string/pantalla_preferencies"
                 app:icon="@drawable/ic_settings" />
@@ -261,9 +348,15 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minWidth="0dp"
+                android:maxWidth="320dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:ellipsize="none"
                 android:enabled="false"
                 android:text="@string/pantalla_ajuda"
                 app:icon="@drawable/ic_help" />
         </LinearLayout>
+
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

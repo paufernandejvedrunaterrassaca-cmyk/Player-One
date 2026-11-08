@@ -67,9 +67,10 @@
         <item name="android:textColor">@color/ice_white</item>
         <item name="iconTint">@color/electric_blue</item>
         <item name="iconPadding">@dimen/spacing_s</item>
-        <item name="android:gravity">start|center_vertical</item>
-        <item name="android:textAlignment">viewStart</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
         <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:minWidth">0dp</item>
         <item name="cornerRadius">@dimen/corner_button</item>
         <item name="strokeColor">@color/slate_blue_stroke</item>
         <item name="strokeWidth">1dp</item>

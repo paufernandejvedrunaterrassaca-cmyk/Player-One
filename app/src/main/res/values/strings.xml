@@ -23,12 +23,14 @@
     <string name="pantalla_registre">Registre</string>
     <string name="pantalla_llista_missions">Llista de missions</string>
     <string name="pantalla_detall_missio">Detall de missió</string>
-    <string name="pantalla_tutorial">Tutorial inicial</string>
+    <string name="pantalla_assoliments">Assoliments</string>
+    <string name="pantalla_grups">Grups</string>
     <string name="pantalla_meves_missions">Les meves missions</string>
     <string name="pantalla_editar_missio">Editar missió</string>
     <string name="pantalla_perfil">Perfil</string>
     <string name="pantalla_preferencies">Preferències</string>
     <string name="pantalla_ajuda">Ajuda</string>
+    <string name="seccio_assoliments_social">Assoliments i social</string>
 
     <string name="inici_sessio_descripcio_tornar">Tornar</string>
     <string name="inici_sessio_titol">Benvingut de nou!</string>
