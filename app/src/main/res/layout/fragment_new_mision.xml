@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night_blue"
+    android:fillViewport="true"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nova_missio_titol"
+            android:textColor="@color/ice_white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/nova_missio_subtitol"
+            android:textColor="@color/grey_blue"
+            android:textSize="14sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="@string/nova_missio_nom"
+            android:textColor="@color/ice_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:labelFor="@id/input_mission_name" />
+
+        <EditText
+            android:id="@+id/input_mission_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/slate_blue"
+            android:hint="@string/nova_missio_nom_hint"
+            android:textColor="@color/ice_white"
+            android:textColorHint="@color/grey_blue"
+            android:paddingHorizontal="14dp"
+            android:textSize="14sp"
+            android:inputType="textCapSentences"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/nova_missio_descripcio"
+            android:textColor="@color/ice_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:labelFor="@id/input_mission_description" />
+
+        <EditText
+            android:id="@+id/input_mission_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/slate_blue"
+            android:gravity="top|start"
+            android:hint="@string/nova_missio_descripcio_hint"
+            android:textColor="@color/ice_white"
+            android:textColorHint="@color/grey_blue"
+            android:padding="14dp"
+            android:textSize="14sp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/nova_missio_dificultat"
+            android:textColor="@color/ice_white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/slate_blue"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <RadioButton
+                android:id="@+id/radio_easy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/nova_missio_facil"
+                android:textColor="@color/ice_white"
+                android:buttonTint="@color/gold" />
+
+            <RadioButton
+                android:id="@+id/radio_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nova_missio_mitjana"
+                android:textColor="@color/ice_white"
+                android:buttonTint="@color/gold" />
+
+            <RadioButton
+                android:id="@+id/radio_hard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nova_missio_dificil"
+                android:textColor="@color/ice_white"
+                android:buttonTint="@color/gold" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/nova_missio_durada"
+            android:textColor="@color/ice_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:labelFor="@id/input_mission_duration" />
+
+        <EditText
+            android:id="@+id/input_mission_duration"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/slate_blue"
+            android:hint="@string/nova_missio_durada_hint"
+            android:textColor="@color/ice_white"
+            android:textColorHint="@color/grey_blue"
+            android:paddingHorizontal="14dp"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/nova_missio_recompensa"
+            android:textColor="@color/ice_white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:labelFor="@id/input_mission_reward" />
+
+        <EditText
+            android:id="@+id/input_mission_reward"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/slate_blue"
+            android:hint="@string/nova_missio_recompensa_hint"
+            android:textColor="@color/ice_white"
+            android:textColorHint="@color/grey_blue"
+            android:paddingHorizontal="14dp"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/btn_save_mission"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/gold"
+            android:contentDescription="@string/nova_missio_guardar_desc"
+            android:text="@string/nova_missio_guardar"
+            android:textColor="@color/night_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>

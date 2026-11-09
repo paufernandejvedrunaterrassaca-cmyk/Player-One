@@ -451,6 +451,43 @@
     <string name="group_detail_mision_3_desc">Terminar y revisar el prototipo del videojuego.</string>
     <string name="group_detail_mision_3_progreso">2 / 12 participantes</string>
 
+    <string name="meves_missions_titol">Les meves missions</string>
+    <string name="meves_missions_subtitol">Organitza i gestiona les teves missions</string>
+    <string name="meves_missions_tornar">Tornar enrere</string>
+    <string name="meves_missions_crear">Crear missió</string>
+    <string name="meves_missions_crear_desc">Crear una missió nova</string>
+    <string name="meves_missions_llistat">Missions creades</string>
+    <string name="meves_missions_exemple_1">Sortir a caminar</string>
+    <string name="meves_missions_exemple_1_desc">Caminar durant 30 minuts</string>
+    <string name="meves_missions_exemple_2">Llegir un llibre</string>
+    <string name="meves_missions_exemple_2_desc">Llegir durant 20 minuts</string>
+    <string name="meves_missions_pendent">Pendent</string>
+    <string name="meves_missions_en_curs">En curs</string>
+    <string name="meves_missions_opcions_desc">Obrir les opcions de la missió</string>
+
+    <string name="nova_missio_titol">Crear missió</string>
+    <string name="nova_missio_subtitol">Personalitza la teva nova aventura</string>
+
+    <string name="nova_missio_nom">Nom de la missió</string>
+    <string name="nova_missio_nom_hint">Escriu el nom de la missió</string>
+
+    <string name="nova_missio_descripcio">Descripció</string>
+    <string name="nova_missio_descripcio_hint">Explica què cal fer per completar-la</string>
+
+    <string name="nova_missio_dificultat">Nivell de dificultat</string>
+    <string name="nova_missio_facil">Fàcil</string>
+    <string name="nova_missio_mitjana">Mitjana</string>
+    <string name="nova_missio_dificil">Difícil</string>
+
+    <string name="nova_missio_durada">Durada estimada (minuts)</string>
+    <string name="nova_missio_durada_hint">Exemple: 30</string>
+
+    <string name="nova_missio_recompensa">Recompensa (punts XP)</string>
+    <string name="nova_missio_recompensa_hint">Exemple: 100</string>
+
+    <string name="nova_missio_guardar">Desar missió</string>
+    <string name="nova_missio_guardar_desc">Desar la nova missió</string>
+
 
 
 

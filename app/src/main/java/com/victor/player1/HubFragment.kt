@@ -77,5 +77,13 @@ class HubFragment : BindingFragment<FragmentHubBinding>(FragmentHubBinding::infl
         binding.btnProfile.setOnClickListener {
             navigateTo(ProfileFragment())
         }
+
+        binding.btnMyMissions.setOnClickListener {
+            navigateTo(CreateMisionsFragment())
+        }
+
+        binding.btnEditMission.setOnClickListener {
+            navigateTo(NewMisionFragment())
+        }
     }
 }
