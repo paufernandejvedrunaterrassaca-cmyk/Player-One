@@ -18,6 +18,8 @@
             android:layout_gravity="start|center_vertical"
             android:src="@drawable/arrow_back"
             android:contentDescription="@string/meves_missions_tornar"
+            android:clickable="true"
+            android:focusable="true"
             app:tint="@color/ice_white" />
 
         <TextView
@@ -48,7 +50,9 @@
         android:background="@color/gold"
         android:contentDescription="@string/meves_missions_crear_desc"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true">
 
         <ImageView
             android:layout_width="24dp"
@@ -78,125 +82,14 @@
         android:textSize="17sp"
         android:textStyle="bold" />
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMissionsCreades"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:clipToPadding="false"
-        android:fillViewport="true">
-
-        <LinearLayout
-            android:id="@+id/missions_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:background="@color/slate_blue"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/meves_missions_exemple_1"
-                        android:textColor="@color/ice_white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="@string/meves_missions_exemple_1_desc"
-                        android:textColor="@color/grey_blue"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:text="@string/meves_missions_pendent"
-                        android:textColor="@color/status_pending"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <ImageView
-                    android:id="@+id/btn_mission_options_1"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:src="@drawable/ic_vertical_dots"
-                    android:contentDescription="@string/meves_missions_opcions_desc"
-                    app:tint="@color/ice_white" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="12dp"
-                android:background="@color/slate_blue"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="16dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/meves_missions_exemple_2"
-                        android:textColor="@color/ice_white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="@string/meves_missions_exemple_2_desc"
-                        android:textColor="@color/grey_blue"
-                        android:textSize="12sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="9dp"
-                        android:text="@string/meves_missions_en_curs"
-                        android:textColor="@color/status_in_progress"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <ImageView
-                    android:id="@+id/btn_mission_options_2"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:src="@drawable/ic_vertical_dots"
-                    android:contentDescription="@string/meves_missions_opcions_desc"
-                    app:tint="@color/ice_white" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </ScrollView>
+        android:paddingBottom="8dp"
+        android:scrollbars="vertical"
+        android:contentDescription="@string/meves_missions_titol" />
 
 </LinearLayout>

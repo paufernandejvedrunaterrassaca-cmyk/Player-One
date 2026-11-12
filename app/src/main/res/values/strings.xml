@@ -488,8 +488,14 @@
     <string name="nova_missio_guardar">Desar missió</string>
     <string name="nova_missio_guardar_desc">Desar la nova missió</string>
 
+    <string name="missions_recompensa_xp_fmt">+%1$d XP</string>
+    <string name="missions_recompensa_moneda_fmt">+%1$d monedes</string>
+    <string name="missio_progres_fmt">%1$d / %2$d</string>
+    <string name="missio_progres_descripcio">Progrés: %1$d de %2$d</string>
+    <string name="missions_estat_completada">Completada</string>
 
-
-
+    <string name="missio_opcions_desc">Opcions de la missió</string>
+    <string name="missio_editar">Editar</string>
+    <string name="missio_eliminar">Eliminar</string>
 
 </resources>

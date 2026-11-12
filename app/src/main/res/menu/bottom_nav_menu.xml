@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_achievements"
+        android:icon="@drawable/ic_cup"
+        android:title="@string/navegacio_assoliments"
+        android:contentDescription="@string/navegacio_descripcio_assoliments" />
+    <item android:id="@+id/nav_groups"
+        android:icon="@drawable/ic_groups"
+        android:title="@string/navegacio_grups"
+        android:contentDescription="@string/navegacio_descripcio_grups" />
+    <item android:id="@+id/nav_missions"
+        android:icon="@drawable/ic_mission"
+        android:title="@string/navegacio_missions"
+        android:contentDescription="@string/navegacio_descripcio_missions" />
+    <item android:id="@+id/nav_create"
+        android:icon="@drawable/ic_add"
+        android:title="@string/navegacio_crear"
+        android:contentDescription="@string/navegacio_descripcio_crear" />
+    <item android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/navegacio_perfil"
+        android:contentDescription="@string/navegacio_descripcio_perfil" />
+</menu>

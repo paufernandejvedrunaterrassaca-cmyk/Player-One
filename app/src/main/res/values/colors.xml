@@ -6,8 +6,8 @@
     <color name="gold">#FFF4B942</color>
     <color name="ice_white">#FFF4F7FC</color>
     <color name="grey_blue">#FFA7B8CC</color>
-    <color name="status_completed">#FF39C889</color>
     <color name="status_pending">#FFF4B942</color>
     <color name="status_in_progress">#FF55B9FF</color>
     <color name="slate_blue_stroke">#FF1E3A5C</color>
+    <color name="status_completed">#FF39C889</color>
 </resources>
