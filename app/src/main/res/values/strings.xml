@@ -498,4 +498,9 @@
     <string name="missio_editar">Editar</string>
     <string name="missio_eliminar">Eliminar</string>
 
+    <string name="menu_superior_ajuda">Ajuda</string>
+    <string name="menu_superior_preferencies">Preferències</string>
+    <string name="menu_superior_hub">Anar al Hub</string>
+    <string name="menu_superior_tornar">Tornar a la pantalla anterior</string>
+
 </resources>
