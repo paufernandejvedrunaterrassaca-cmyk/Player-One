@@ -7,31 +7,14 @@
     android:background="@color/night_blue"
     android:padding="20dp">
 
-    <FrameLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="48dp">
-
-        <ImageView
-            android:id="@+id/btn_back"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_gravity="start|center_vertical"
-            android:src="@drawable/arrow_back"
-            android:contentDescription="@string/meves_missions_tornar"
-            android:clickable="true"
-            android:focusable="true"
-            app:tint="@color/ice_white" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/meves_missions_titol"
-            android:textColor="@color/ice_white"
-            android:textSize="23sp"
-            android:textStyle="bold" />
-
-    </FrameLayout>
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="@string/meves_missions_titol"
+        android:textColor="@color/ice_white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"

@@ -69,19 +69,11 @@ class CreateMisionsFragment : BindingFragment<FragmentCreateMisionsBinding>(
         binding.btnCreateMission.setOnClickListener {
             navigateTo(NewMisionFragment())
         }
-
-        binding.btnBack.setOnClickListener {
-            parentFragmentManager.popBackStack()
-        }
     }
 
     override fun onResume() {
         super.onResume()
-
-        if (::adapter.isInitialized) {
-            adapter.notifyDataSetChanged()
-        }
-
         (activity as? MainActivity)?.mostrarMenu(true)
+        (activity as? MainActivity)?.seleccionarPestanya(R.id.nav_create)
     }
 }

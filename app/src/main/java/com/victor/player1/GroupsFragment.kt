@@ -8,5 +8,6 @@ class GroupsFragment :
     override fun onResume() {
         super.onResume()
         (activity as? MainActivity)?.mostrarMenu(true)
+        (activity as? MainActivity)?.seleccionarPestanya(R.id.nav_groups)
     }
 }

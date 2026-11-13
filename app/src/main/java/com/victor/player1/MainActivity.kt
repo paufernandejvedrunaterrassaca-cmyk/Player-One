@@ -89,4 +89,41 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavCard.visibility =
             if (mostrar) View.VISIBLE else View.GONE
     }
+
+    fun seleccionarPestanya(id: Int) {
+        binding.bottomNav.setOnItemSelectedListener(null)
+        binding.bottomNav.selectedItemId = id
+
+        binding.bottomNav.setOnItemSelectedListener { item ->
+
+            supportFragmentManager.popBackStackImmediate(
+                null,
+                FragmentManager.POP_BACK_STACK_INCLUSIVE
+            )
+
+            supportFragmentManager.commit {
+                setReorderingAllowed(true)
+
+                when (item.itemId) {
+                    R.id.nav_achievements ->
+                        replace(R.id.fragment_container, AchievementsFragment())
+
+                    R.id.nav_groups ->
+                        replace(R.id.fragment_container, GroupsFragment())
+
+                    R.id.nav_missions ->
+                        replace(R.id.fragment_container, MissionsFragment())
+
+                    R.id.nav_create ->
+                        replace(R.id.fragment_container, CreateMisionsFragment())
+
+                    R.id.nav_profile ->
+                        replace(R.id.fragment_container, ProfileFragment())
+                }
+            }
+
+            mostrarMenu(true)
+            true
+        }
+    }
 }
