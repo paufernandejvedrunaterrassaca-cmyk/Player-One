@@ -2,39 +2,21 @@ package com.victor.player1
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.view.ViewGroup
 import androidx.activity.SystemBarStyle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.commit
 import com.victor.player1.databinding.ActivityMainBinding
-import kotlin.reflect.KClass
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
-    private val tabs: Map<Int, () -> Fragment> = mapOf(
-        R.id.nav_achievements to { AchievementsFragment() },
-        R.id.nav_groups to { GroupsFragment() },
-        R.id.nav_missions to { MissionsFragment() },
-        R.id.nav_create to { CreateMisionsFragment() },
-        R.id.nav_profile to { ProfileFragment() }
-    )
-
-    private val tabOf: Map<KClass<out Fragment>, Int> = mapOf(
-        AchievementsFragment::class to R.id.nav_achievements,
-        GroupsFragment::class to R.id.nav_groups,
-        MissionsFragment::class to R.id.nav_missions,
-        CreateMisionsFragment::class to R.id.nav_create,
-        ProfileFragment::class to R.id.nav_profile
-    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,7 +33,6 @@ class MainActivity : AppCompatActivity() {
             (binding.bottomNavCard.layoutParams as ViewGroup.MarginLayoutParams).bottomMargin
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.root) { _, insets ->
-
             val bars = insets.getInsets(
                 WindowInsetsCompat.Type.systemBars()
             )
@@ -65,63 +46,47 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNav.setOnItemSelectedListener { item ->
 
-            val destination = tabs[item.itemId]?.invoke()
-                ?: return@setOnItemSelectedListener false
-
-            val current = supportFragmentManager.findFragmentById(
-                R.id.fragment_container
+            supportFragmentManager.popBackStackImmediate(
+                null,
+                FragmentManager.POP_BACK_STACK_INCLUSIVE
             )
 
-            if (current == null || current::class != destination::class) {
+            supportFragmentManager.commit {
+                setReorderingAllowed(true)
 
-                supportFragmentManager.popBackStackImmediate(
-                    null,
-                    FragmentManager.POP_BACK_STACK_INCLUSIVE
-                )
+                when (item.itemId) {
+                    R.id.nav_achievements ->
+                        replace(R.id.fragment_container, AchievementsFragment())
 
-                supportFragmentManager.commit {
-                    setReorderingAllowed(true)
-                    replace(
-                        R.id.fragment_container,
-                        destination
-                    )
+                    R.id.nav_groups ->
+                        replace(R.id.fragment_container, GroupsFragment())
+
+                    R.id.nav_missions ->
+                        replace(R.id.fragment_container, MissionsFragment())
+
+                    R.id.nav_create ->
+                        replace(R.id.fragment_container, CreateMisionsFragment())
+
+                    R.id.nav_profile ->
+                        replace(R.id.fragment_container, ProfileFragment())
                 }
             }
+
+            mostrarMenu(true)
 
             true
         }
 
-        supportFragmentManager.registerFragmentLifecycleCallbacks(
-            object : FragmentManager.FragmentLifecycleCallbacks() {
-
-                override fun onFragmentResumed(
-                    fm: FragmentManager,
-                    f: Fragment
-                ) {
-                    val tabId = tabOf[f::class]
-
-                    binding.bottomNavCard.isVisible = tabId != null
-
-                    if (tabId != null &&
-                        binding.bottomNav.selectedItemId != tabId
-                    ) {
-                        binding.bottomNav.selectedItemId = tabId
-                    }
-                }
-
-            },
-            false
-        )
-
         if (savedInstanceState == null) {
-
             supportFragmentManager.commit {
                 setReorderingAllowed(true)
-                replace(
-                    R.id.fragment_container,
-                    HubFragment()
-                )
+                replace(R.id.fragment_container, HubFragment())
             }
         }
+    }
+
+    fun mostrarMenu(mostrar: Boolean) {
+        binding.bottomNavCard.visibility =
+            if (mostrar) View.VISIBLE else View.GONE
     }
 }

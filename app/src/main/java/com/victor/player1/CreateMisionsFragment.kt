@@ -34,7 +34,6 @@ class CreateMisionsFragment : BindingFragment<FragmentCreateMisionsBinding>(
                         putInt("mision_id", mision.id)
                     }
                 }
-
                 navigateTo(fragment)
             },
 
@@ -74,5 +73,15 @@ class CreateMisionsFragment : BindingFragment<FragmentCreateMisionsBinding>(
         binding.btnBack.setOnClickListener {
             parentFragmentManager.popBackStack()
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        if (::adapter.isInitialized) {
+            adapter.notifyDataSetChanged()
+        }
+
+        (activity as? MainActivity)?.mostrarMenu(true)
     }
 }

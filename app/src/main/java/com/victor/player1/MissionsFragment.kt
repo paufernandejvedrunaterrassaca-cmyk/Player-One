@@ -25,4 +25,9 @@ class MissionsFragment : BindingFragment<FragmentMissionsBinding>(
             Log.d("MissionsFragment", "Missió: ${mision.titol}")
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        (activity as? MainActivity)?.mostrarMenu(true)
+    }
 }
