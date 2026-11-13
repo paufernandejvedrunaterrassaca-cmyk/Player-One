@@ -34,13 +34,6 @@
             android:gravity="center_vertical"
             android:baselineAligned="false">
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:src="@drawable/arrow_back"
-                app:tint="@color/ice_white"
-                android:contentDescription="@string/inici_sessio_descripcio_tornar" />
-
             <View
                 android:layout_width="0dp"
                 android:layout_height="1dp"

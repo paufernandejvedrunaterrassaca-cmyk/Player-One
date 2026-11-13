@@ -18,17 +18,6 @@
         android:background="@color/night_blue"
         android:alpha="0.40" />
 
-    <ImageView
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_gravity="top|start"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="34dp"
-        android:src="@drawable/arrow_back"
-        app:tint="@color/ice_white"
-        android:scaleType="fitCenter"
-        android:contentDescription="@string/inici_sessio_descripcio_tornar" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
