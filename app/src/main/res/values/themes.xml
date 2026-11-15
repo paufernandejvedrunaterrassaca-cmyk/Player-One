@@ -28,7 +28,7 @@
 
     <style name="Theme.Player1.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/night_blue</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_animat</item>
         <item name="postSplashScreenTheme">@style/Theme.Player1</item>
     </style>
 </resources>

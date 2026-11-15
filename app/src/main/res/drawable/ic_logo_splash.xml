@@ -6,36 +6,38 @@
     android:viewportWidth="122"
     android:viewportHeight="120">
 
-    <path
-        android:fillColor="#00000000"
-        android:pathData="M70.56,19A46,46 0,1 1,51.44 19"
-        android:strokeWidth="1.6"
-        android:strokeAlpha="0.85"
-        android:strokeColor="@color/ice_white" />
-
-    <path
-        android:fillColor="@color/ice_white"
-        android:pathData="M9,64L15,63.2L21,64L15,64.8ZM101,64L107,63.2L113,64L107,64.8Z" />
-
-    <path
-        android:fillType="evenOdd"
-        android:pathData="M28,44H52A13,13 0,0 1,52 70H42V85H49V88H27V85H34V47H28ZM42,48.5H51A8.5,8.5 0,0 1,51 65.5H42ZM73,51L88,42V85H95V88H73V85H80V53L74.5,55Z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endColor="#FFBFD8FF"
-                android:endY="88"
-                android:startColor="@color/ice_white"
-                android:startY="42"
-                android:type="linear"
-                android:endX="61"
-                android:startX="61" />
-        </aapt:attr>
-    </path>
-
     <group
-        android:name="estrella"
+        android:name="logo_complet"
         android:pivotX="61"
-        android:pivotY="18">
+        android:pivotY="60"
+        android:scaleX="0.65"
+        android:scaleY="0.65" >
+
+        <path
+            android:fillColor="#00000000"
+            android:pathData="M70.56,19A46,46 0,1 1,51.44 19"
+            android:strokeWidth="1.6"
+            android:strokeAlpha="0.85"
+            android:strokeColor="@color/ice_white" />
+
+        <path
+            android:fillColor="@color/ice_white"
+            android:pathData="M9,64L15,63.2L21,64L15,64.8ZM101,64L107,63.2L113,64L107,64.8Z" />
+
+        <path
+            android:fillType="evenOdd"
+            android:pathData="M28,44H52A13,13 0,0 1,52 70H42V85H49V88H27V85H34V47H28ZM42,48.5H51A8.5,8.5 0,0 1,51 65.5H42ZM73,51L88,42V85H95V88H73V85H80V53L74.5,55Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:endColor="#FFBFD8FF"
+                    android:endY="88"
+                    android:startColor="@color/ice_white"
+                    android:startY="42"
+                    android:type="linear"
+                    android:endX="61"
+                    android:startX="61" />
+            </aapt:attr>
+        </path>
 
         <path
             android:fillColor="@color/status_in_progress"

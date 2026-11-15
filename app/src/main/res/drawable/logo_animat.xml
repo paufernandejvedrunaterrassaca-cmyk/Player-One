@@ -3,7 +3,7 @@
     android:drawable="@drawable/ic_logo_splash">
 
     <target
-        android:name="estrella"
+        android:name="logo_complet"
         android:animation="@animator/anim_logo_splash" />
 
 </animated-vector>
