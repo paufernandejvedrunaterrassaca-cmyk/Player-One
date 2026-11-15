@@ -2,11 +2,14 @@ package com.victor.player1
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.SystemBarStyle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
@@ -16,7 +19,6 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.commit
 import com.victor.player1.databinding.ActivityMainBinding
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +35,8 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setSupportActionBar(binding.toolbar)
 
         val baseMargin =
             (binding.bottomNavCard.layoutParams as ViewGroup.MarginLayoutParams).bottomMargin
@@ -60,8 +64,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.toolbar.inflateMenu(R.menu.top_menu)
-
         binding.toolbar.setNavigationIcon(R.drawable.arrow_back)
         binding.toolbar.setNavigationContentDescription(
             R.string.menu_superior_tornar
@@ -88,29 +90,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.toolbar.setOnMenuItemClickListener { item ->
-            when (item.itemId) {
-                R.id.menu_ajuda -> {
-                    navegarA(HelpFragment())
-                    true
-                }
-
-                R.id.menu_preferencies -> {
-                    navegarA(PreferencesFragment())
-                    true
-                }
-
-                R.id.menu_hub -> {
-                    irAlHub()
-                    true
-                }
-
-                else -> false
-            }
-        }
-
         binding.bottomNav.setOnItemSelectedListener { item ->
-
             supportFragmentManager.popBackStackImmediate(
                 null,
                 FragmentManager.POP_BACK_STACK_INCLUSIVE
@@ -150,6 +130,32 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.top_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.menu_ajuda -> {
+                navegarA(HelpFragment())
+                true
+            }
+
+            R.id.menu_preferencies -> {
+                navegarA(PreferencesFragment())
+                true
+            }
+
+            R.id.menu_hub -> {
+                irAlHub()
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
     private fun navegarA(fragment: Fragment) {
         supportFragmentManager.commit {
             setReorderingAllowed(true)
@@ -185,7 +191,6 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNav.selectedItemId = id
 
         binding.bottomNav.setOnItemSelectedListener { item ->
-
             supportFragmentManager.popBackStackImmediate(
                 null,
                 FragmentManager.POP_BACK_STACK_INCLUSIVE
