@@ -1,4 +1,6 @@
-DOCUMENTACIÓ DEL CODI
+## VIDEO ACTIVITAT 5 I 6: https://youtu.be/t3jjr4glgDs
+
+# DOCUMENTACIÓ DEL CODI ACTIVITAT 6
 
 1. SplashScreen i animació del logotip
 
