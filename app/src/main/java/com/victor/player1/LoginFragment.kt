@@ -7,4 +7,13 @@ class LoginFragment : BindingFragment<FragmentLoginBinding>(FragmentLoginBinding
 
     private val viewModel: LoginViewModel by viewModels()
 
+    override fun onViewCreated(view: android.view.View, savedInstanceState: android.os.Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.editEmail.setOnFocusChangeListener { _, _ -> viewModel.setEmail(binding.editEmail.text.toString())
+        }
+
+        binding.editPassword.setOnFocusChangeListener { _, _ -> viewModel.setPassword(binding.editPassword.text.toString())
+        }
+    }
 }
