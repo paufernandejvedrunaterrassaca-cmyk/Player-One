@@ -144,6 +144,7 @@
             android:layout_marginTop="4dp"
             android:backgroundTint="@color/gold"
             android:text="@string/inici_sessio_boto"
+            android:id="@+id/button_login"
             android:textColor="@color/night_blue"
             android:textSize="16sp"
             android:textStyle="bold"

@@ -30,13 +30,13 @@ class LoginViewModel : ViewModel() {
         val emailValue = _email.value ?: ""
 
         if (emailValue.isEmpty()) {
-            _emailError.value = "El email es obligatorio"
+            _emailError.value = "El correu electrònic és obligatori"
             return false
         }
 
         if (!android.util.Patterns.EMAIL_ADDRESS
                 .matcher(emailValue).matches()) {
-            _emailError.value = "El email no es válido"
+            _emailError.value = "El correu electrònic no és vàlid"
             return false
         }
 
@@ -48,13 +48,13 @@ class LoginViewModel : ViewModel() {
         val passwordValue = _password.value ?: ""
 
         if (passwordValue.isEmpty()) {
-            _passwordError.value = "La contraseña es obligatoria"
+            _passwordError.value = "La contrasenya és obligatòria"
             return false
         }
 
         if (passwordValue.length < 6) {
             _passwordError.value =
-                "La contraseña debe tener al menos 6 caracteres"
+                "La contrasenya ha de tenir almenys 6 caràcters"
             return false
         }
 
